@@ -1,0 +1,29 @@
+.main h2 {
+  color:  #82b1ff;
+}
+
+section {
+  margin: 20px;
+}
+
+.about {
+  
+}
+
+.architect-of-the-day {
+  
+}
+.architect-of-the-day img {
+  margin: 15px;
+}
+
+.architect-of-the-day a {
+  color: #000;
+}
+.developers-team {
+  
+}
+.developers-team .developer-name{
+  font-weight: 600;
+}
+

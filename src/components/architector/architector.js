@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import PhotoArchitector from './componentParts/photoArchitector';
 import NameArchitector from './componentParts/nameArchitector';
 import YearsLifeArchitector from './componentParts/yearsLifeArchitector';
-// import LocationArchitector from './componentParts/locationArchitector';
+import LocationArchitector from './componentParts/locationArchitector';
 // import BiographyArchitector from './componentParts/biographyArchitecto';
 // import NameArchitector from './componentParts/nameArchitector';
 // import NameArchitector from './componentParts/nameArchitector';
@@ -45,8 +45,8 @@ class Architector extends Component {
             <PhotoArchitector url={this.state.photo} />
             <NameArchitector name={this.state.name} />
             <YearsLifeArchitector date={this.state.date} />
-            {/* <LocationArchitector location={this.state.location} />
-            <BiographyArchitector biography={this.state.biography} /> */}
+            <LocationArchitector location={this.state.location} />
+            {/* <BiographyArchitector biography={this.state.biography} /> */}
           </Col>
         </Row>
       </Container>

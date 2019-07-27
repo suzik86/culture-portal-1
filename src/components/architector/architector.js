@@ -8,7 +8,7 @@ import PhotoArchitector from './componentParts/photoArchitector';
 import NameArchitector from './componentParts/nameArchitector';
 import YearsLifeArchitector from './componentParts/yearsLifeArchitector';
 import LocationArchitector from './componentParts/locationArchitector';
-// import BiographyArchitector from './componentParts/biographyArchitecto';
+import BiographyArchitector from './componentParts/biographyArchitecto';
 // import NameArchitector from './componentParts/nameArchitector';
 // import NameArchitector from './componentParts/nameArchitector';
 // import NameArchitector from './componentParts/nameArchitector';
@@ -46,7 +46,7 @@ class Architector extends Component {
             <NameArchitector name={this.state.name} />
             <YearsLifeArchitector date={this.state.date} />
             <LocationArchitector location={this.state.location} />
-            {/* <BiographyArchitector biography={this.state.biography} /> */}
+            <BiographyArchitector biography={this.state.biography} />
           </Col>
         </Row>
       </Container>

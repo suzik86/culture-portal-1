@@ -4,10 +4,10 @@ import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 function TimeLineRender(props) {
   const { detailed } = props;
 
-  // const randomColor = () => {
-  //   let rgb = [Math.random() * 180 + 76, Math.random() * 180 + 76, Math.random() * 180 + 76];
-  //   return `rgb(${rgb})`;
-  // }
+  const randomColor = () => {
+    let rgb = [Math.random() * 180 + 76, Math.random() * 180 + 76, Math.random() * 180 + 76];
+    return `rgb(${rgb})`;
+  }
 
   const DetailedForRender = detailed.map(function (item, i) {
     return (

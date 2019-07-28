@@ -9,7 +9,7 @@ import NameArchitector from './componentParts/nameArchitector';
 import YearsLifeArchitector from './componentParts/yearsLifeArchitector';
 import LocationArchitector from './componentParts/locationArchitector';
 import BiographyArchitector from './componentParts/biographyArchitecto';
-// import NameArchitector from './componentParts/nameArchitector';
+import TimeLineArchitector from './componentParts/timeLineArchitector';
 // import NameArchitector from './componentParts/nameArchitector';
 // import NameArchitector from './componentParts/nameArchitector';
 // import NameArchitector from './componentParts/nameArchitector';
@@ -33,7 +33,9 @@ class Architector extends Component {
         description: this.props.description || `советский архитектор и педагог, работавший в конце 1940-х — начале 1950-х годов в Литве; заслуженный архитектор Беларуси (1980), член-корреспондент Белорусской академии архитектуры.`
       },
       timeLine: {
-        
+        detailedBiographyDate: ['14.01.1918', '1940', '1946 - 1958', '1958', '1960', '1964', '1980', '23.09.1997'],
+        detailedBiographyText: ['г.Алатырь, Симбирская губерния (ныне Чувашия)', 'Закончил архитектурный факультет Ленинградского института инженеров коммунального строительства по специальности «архитектор-проектировщик жилых и общественных зданий»', 'Работал в Вильнюсе районным архитектором, затем творческим руководителем в проектных организациях.',
+          'Переехал в Минск', 'Работал в институте «Белгоспроект»', 'Преподавал в Белорусском политехническом институте (ныне БНТУ)', 'Получил ученую степень Профессора', 'Умер в городе Минск']
       }
     };
   }
@@ -49,7 +51,7 @@ class Architector extends Component {
             <YearsLifeArchitector date={this.state.date} />
             <LocationArchitector location={this.state.location} />
             <BiographyArchitector biography={this.state.biography} />
-            <TimeLine  />
+            <TimeLineArchitector timeLine={this.state.timeLine} />
           </Col>
         </Row>
       </Container>

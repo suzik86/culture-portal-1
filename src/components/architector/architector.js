@@ -11,7 +11,7 @@ import LocationArchitector from './componentParts/LocationArchitector';
 import BiographyArchitector from './componentParts/BiographyArchitecto';
 import TimeLineArchitector from './componentParts/TimeLineArchitector';
 import WorkArchitector from './componentParts/WorkArchitector';
-// import NameArchitector from './componentParts/nameArchitector';
+import CarouselArchitector from './componentParts/CarouselArchitector';
 // import NameArchitector from './componentParts/nameArchitector';
 
 class Architector extends Component {

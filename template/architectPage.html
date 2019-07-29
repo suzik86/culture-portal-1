@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Architects of Belarus</title>
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/architectPage.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/architectPage.css">
+  <!-- MDBootstrap flags -->
+  <link href="css/addons/flag.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -15,32 +17,31 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+  <header class="header">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">                  
-            <a class="logo navbar-brand" href="#"><span>Архитекторы</span><span> Беларуси</span></a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Архитекторы</a>
-                </li>                      
-              </ul> 
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span> English</a>
-                      <div class="dropdown-menu" aria-labelledby="dropdown09">
-                          <a class="dropdown-item" href="#fr"><span class="flag-icon flag-icon-fr"> </span>  French</a>
-                          <a class="dropdown-item" href="#it"><span class="flag-icon flag-icon-it"> </span>  Italian</a>
-                          <a class="dropdown-item" href="#ru"><span class="flag-icon flag-icon-ru"> </span>  Russian</a>
-                      </div>
-                  </li>     
-              </ul>           
-  
-            </div>
-          </nav>
-  
-      </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="logo navbar-brand" href="#"><span>Архитекторы</span><span> Беларуси</span></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="menu navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Все архитекторы</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="russia flag"></i> Russian</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown09">
+                      <a class="dropdown-item" href="#us"><i class="united states flag"></i>  English</a>
+                      <a class="dropdown-item" href="#by"><i class="belarus flag"></i>  Belarusian</a>
+                  </div>
+              </li>
+          </ul>
+
+        </div>
+      </nav>
+
+  </header>
 
     <main class="main">
         <div class="container">
@@ -49,25 +50,25 @@
                   <img src="./images/Karako_Victor.jpg" alt="Карако Виктор Иванович" width="350">
                   <h3>Карако Виктор Иванович</h3>
                   <p>
-                    <span class="bold">Дата рождения:</span>
-                    <span>29 июля 1948</span>
+                    <span class="bold">Дата рождения: </span>
+                    <span> 29 июля 1948</span>
                   </p>
                   <p>
-                    <span class="bold">Место рождения:</span>
-                    <span>Гродно, Белорусская ССР, СССР</span>
+                    <span class="bold">Место рождения: </span>
+                    <span> Гродно, Белорусская ССР, СССР</span>
                   </p>
 
                   <p>Виктор Иванович Карако родился 29 июля 1948 в Гродно, Белорусская ССР. В 1966—1972 гг.
                         учился на кафедре архитектуры Белорусского политехнического института. С 1975 г. член
-                         Белорусского союза архитекторов. В 1972—1976 и 1982—1998 гг. работал архитектором, 
+                         Белорусского союза архитекторов. В 1972—1976 и 1982—1998 гг. работал архитектором,
                          старшим архитектором, главным архитектор проектов, руководителем мастерской в «БЕЛГОСПРОЕКТе».
                           В 1976—1982 гг. руководитель группы архитекторов, главный архитектор проектов, руководитель
-                           мастерской БелНИИПградостроительства. 
+                           мастерской БелНИИПградостроительства.
                   </p>
                 </div>
             </section>
             <section class="timeline row">
-            
+
                 <div class="timeline-container">
                     <div class="container mt-5 mb-5">
                         <div class="row">
@@ -95,11 +96,11 @@
                             </ul>
                           </div>
                         </div>
-                      </div>                  
-                      
-                      
+                      </div>
+
+
                 </div>
-          
+
             </section>
 
             <section class="works-block row">
@@ -118,13 +119,13 @@
                           <th scope="row">1</th>
                           <td colspan="8">Судейский домик на гоночном кольце Боровая</td>
                           <td colspan="3">-</td>
-                          
+
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td colspan="8">Молодёжный центр в г. Новополоцк</td>
                           <td colspan="3">-</td>
-                          
+
                         </tr>
                         <tr>
                           <th scope="row">3</th>
@@ -139,7 +140,7 @@
             <section class="gallery row">
                 <div class="col-md">
                     <h4>Галерея работ</h4>
-                    
+
                       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                           <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -150,19 +151,19 @@
                             <div class="carousel-item active">
                               <img class="d-block w-100" src="./images/800px-Судейский_домик.jpg" alt="Судейский домик" height="600px">
                               <div class="carousel-caption d-none d-md-block">
-                                <h3>Судейский домик</h3>                                  
+                                <h3>Судейский домик</h3>
                               </div>
                             </div>
                             <div class="carousel-item">
                               <img class="d-block w-100" src="./images/Belagroprombank.jpg" alt="Belagroprombank" height="600px">
                               <div class="carousel-caption d-none d-md-block">
-                                  <h3>Здание Белагропромбанка</h3>                                  
+                                  <h3>Здание Белагропромбанка</h3>
                                 </div>
                             </div>
                             <div class="carousel-item">
                               <img class="d-block w-100" src="./images/1024px-МВД_333.jpg" alt="Здание МВД" height="600px">
                               <div class="carousel-caption d-none d-md-block">
-                                  <h3>Здание МВД</h3>                                  
+                                  <h3>Здание МВД</h3>
                                 </div>
                             </div>
                           </div>
@@ -176,7 +177,7 @@
                           </a>
                         </div>
                 </div>
-                
+
             </section>
             <section class="video row">
                 <div class="col-md">
@@ -191,14 +192,16 @@
                     <div  class = "map"style="overflow:hidden;width: 700px;position: relative;"><iframe width="700" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/fr/">https://embedgooglemaps.com/fr/</a> & <a href="https://iamsterdamcard.it">i amsterdamcard it</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
                 </div>
             </section>
-            
+
         </div>
-    </main>        
-        
+    </main>
+
     <footer class="footer">
-      <span class="footer_corypight">copyright © Rolling Scopes School 2019</span>       
+      <span class="footer_corypight">copyright © Rolling Scopes School 2019</span>
     </footer>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -4,13 +4,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-import PhotoArchitector from './componentParts/photoArchitector';
-import NameArchitector from './componentParts/nameArchitector';
-import YearsLifeArchitector from './componentParts/yearsLifeArchitector';
-import LocationArchitector from './componentParts/locationArchitector';
-import BiographyArchitector from './componentParts/biographyArchitecto';
-import TimeLineArchitector from './componentParts/timeLineArchitector';
-// import NameArchitector from './componentParts/nameArchitector';
+import PhotoArchitector from './componentParts/PhotoArchitector';
+import NameArchitector from './componentParts/NameArchitector';
+import YearsLifeArchitector from './componentParts/YearsLifeArchitector';
+import LocationArchitector from './componentParts/LocationArchitector';
+import BiographyArchitector from './componentParts/BiographyArchitecto';
+import TimeLineArchitector from './componentParts/TimeLineArchitector';
+import WorkArchitector from './componentParts/WorkArchitector';
 // import NameArchitector from './componentParts/nameArchitector';
 // import NameArchitector from './componentParts/nameArchitector';
 
@@ -36,6 +36,22 @@ class Architector extends Component {
         detailedBiographyDate: ['14.01.1918', '1940', '1946 - 1958', '1958', '1960', '1964', '1980', '23.09.1997'],
         detailedBiographyText: ['г.Алатырь, Симбирская губерния (ныне Чувашия)', 'Закончил архитектурный факультет Ленинградского института инженеров коммунального строительства по специальности «архитектор-проектировщик жилых и общественных зданий»', 'Работал в Вильнюсе районным архитектором, затем творческим руководителем в проектных организациях.',
           'Переехал в Минск', 'Работал в институте «Белгоспроект»', 'Преподавал в Белорусском политехническом институте (ныне БНТУ)', 'Получил ученую степень Профессора', 'Умер в городе Минск']
+      },
+      work: {
+        workTitle: `Работы`,
+        workSubtitle: `Проекты и постройки`,
+        workInfo: {
+          info0: `1930 - Автор проекта планировки и застройки Астрахани.`,
+          info1: `1945-1947 - Административное здание — КГБ Беларуси`,
+          info2: `1950 - Здание Госбанка БССР.`,
+          info3: `Жилые дома и мост через р. Свислочь.`,
+          info4: `1946-1954 - Спортивный комплекс «Динамо».`,
+        }
+      },
+      gallery: {
+        photo1: 'https://www.zastavki.com/pictures/1366x768/2008/Widescreen__004635_.jpg',
+        photo2: 'http://wp.widewallpapers.ru/2k/abstract-color-lines/1600x900/color-lines-abstract-wide-wallpaper-1600x900-001.jpg',
+        photo3: 'https://www.komandirovka.ru/upload/iblock/e28/e28a9368623cb4f5302c08112c3b4d5f.jpg'
       }
     };
   }
@@ -52,6 +68,8 @@ class Architector extends Component {
             <LocationArchitector location={this.state.location} />
             <BiographyArchitector biography={this.state.biography} />
             <TimeLineArchitector timeLine={this.state.timeLine} />
+            <WorkArchitector work={this.state.work}/>
+            <CarouselArchitector gallery={this.state.gallery}/>
           </Col>
         </Row>
       </Container>

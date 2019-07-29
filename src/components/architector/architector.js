@@ -12,7 +12,7 @@ import BiographyArchitector from './componentParts/BiographyArchitecto';
 import TimeLineArchitector from './componentParts/TimeLineArchitector';
 import WorkArchitector from './componentParts/WorkArchitector';
 import CarouselArchitector from './componentParts/CarouselArchitector';
-// import NameArchitector from './componentParts/nameArchitector';
+import GoogleMapArchitector from './componentParts/GoogleMapArchitector';
 
 class Architector extends Component {
   constructor(props) {
@@ -70,6 +70,7 @@ class Architector extends Component {
             <TimeLineArchitector timeLine={this.state.timeLine} />
             <WorkArchitector work={this.state.work}/>
             <CarouselArchitector gallery={this.state.gallery}/>
+            <GoogleMapArchitector />
           </Col>
         </Row>
       </Container>

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const LocationArchitector = ({ place, placeInfo }) => (
+const Location = ({ place, placeInfo }) => (
   <p>
     <span>{place}</span>
     <span>{placeInfo}</span>
   </p>
 );
 
-export default LocationArchitector;
+export default Location;

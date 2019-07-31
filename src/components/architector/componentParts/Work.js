@@ -2,7 +2,7 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import uniqid from 'uniqid';
 
-const WorkArchitector = ({ work }) => {
+const Work = ({ work }) => {
   const tableWork = Object.values(work.workInfo).map((item, i) => (
     <tr key={uniqid()}>
       <td>{i + 1}</td>
@@ -28,4 +28,4 @@ const WorkArchitector = ({ work }) => {
   );
 };
 
-export default WorkArchitector;
+export default Work;

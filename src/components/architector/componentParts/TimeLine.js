@@ -2,7 +2,7 @@ import React from 'react';
 
 import TimeLineRender from './utils/TimeLineRender';
 
-const TimeLineArchitector = ({ timeLine }) => {
+const TimeLine = ({ timeLine }) => {
   const detailed = [];
 
   for (let i = 0; i < timeLine.detailedBiographyDate.length; i += 1) {
@@ -17,4 +17,4 @@ const TimeLineArchitector = ({ timeLine }) => {
   );
 };
 
-export default TimeLineArchitector;
+export default TimeLine;

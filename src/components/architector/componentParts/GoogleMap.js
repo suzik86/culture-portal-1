@@ -2,7 +2,7 @@ import React from 'react'
 import { withGoogleMap, GoogleMap } from 'react-google-maps';
 
 
-function GoogleMapArchitector() {
+function GoogleMap() {
 
   const Map = withGoogleMap(props => {
     <GoogleMap />
@@ -23,4 +23,4 @@ function GoogleMapArchitector() {
   )
 }
 
-export default GoogleMapArchitector;
+export default GoogleMap;

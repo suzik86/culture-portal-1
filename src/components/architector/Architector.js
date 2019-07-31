@@ -4,15 +4,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-import PhotoArchitector from './componentParts/PhotoArchitector';
-import NameArchitector from './componentParts/NameArchitector';
-import YearsLifeArchitector from './componentParts/YearsLifeArchitector';
-import LocationArchitector from './componentParts/LocationArchitector';
-import BiographyArchitector from './componentParts/BiographyArchitecto';
-import TimeLineArchitector from './componentParts/TimeLineArchitector';
-import WorkArchitector from './componentParts/WorkArchitector';
-import CarouselArchitector from './componentParts/CarouselArchitector';
-// import GoogleMapArchitector from './componentParts/GoogleMapArchitector';
+import Photo from './componentParts/Photo';
+import Name from './componentParts/Name';
+import YearsLife from './componentParts/YearsLife';
+import Location from './componentParts/Location';
+import Biography from './componentParts/Biography';
+import TimeLine from './componentParts/TimeLine';
+import Work from './componentParts/Work';
+import CarouselCustom from './componentParts/CarouselCustom';
+// import GoogleMap from './componentParts/GoogleMap';
 
 class Architector extends Component {
   constructor(props) {
@@ -72,15 +72,15 @@ class Architector extends Component {
       <Container className="container">
         <Row className="architect-description row">
           <Col className="col-md text-center">
-            <PhotoArchitector url={photo} />
-            <NameArchitector name={name} />
-            <YearsLifeArchitector date={date} />
-            <LocationArchitector location={location} />
-            <BiographyArchitector biography={biography} />
-            <TimeLineArchitector timeLine={timeLine} />
-            <WorkArchitector work={work} />
-            <CarouselArchitector gallery={gallery} />
-            {/* <GoogleMapArchitector /> */}
+            <Photo url={photo} />
+            <Name name={name} />
+            <YearsLife date={date} />
+            <Location location={location} />
+            <Biography biography={biography} />
+            <TimeLine timeLine={timeLine} />
+            <Work work={work} />
+            <CarouselCustom gallery={gallery} />
+            {/* <GoogleMap /> */}
           </Col>
         </Row>
       </Container>

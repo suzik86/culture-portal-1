@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import uniqid from 'uniqid';
 
 
-const CarouselArchitector = ({ gallery }) => {
+const CarouselCustom = ({ gallery }) => {
   const imageForCarousel = Object.values(gallery).map(item => (
     <Carousel.Item key={uniqid()}>
       <img
@@ -21,4 +21,4 @@ const CarouselArchitector = ({ gallery }) => {
   );
 };
 
-export default CarouselArchitector;
+export default CarouselCustom;

@@ -8,7 +8,7 @@ function YearsLifeArchitector(props) {
       <span>{years}</span>
       <span>{life}</span>
     </p>
-  )
+  );
 }
 
 export default YearsLifeArchitector;

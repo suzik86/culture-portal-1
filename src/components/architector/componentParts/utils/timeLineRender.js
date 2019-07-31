@@ -7,7 +7,7 @@ import randomColor from './randomColor';
 function TimeLineRender(props) {
   const { detailed } = props;
 
-  const detailedForRender = detailed.map(function (item) {
+  const detailedForRender = detailed.map((item) => {
 
     return (
       <TimelineItem
@@ -25,15 +25,15 @@ function TimeLineRender(props) {
           {item.detailedBiographyText}
         </p>
 
-      </TimelineItem >
+      </TimelineItem>
     )
-  })
+  });
 
   return (
-    <Timeline lineColor={'rgb(221, 221, 221)'}>
+    <Timeline lineColor="rgb(221, 221, 221)">
       {detailedForRender}
     </Timeline>
-  )
+  );
 }
 
 export default TimeLineRender;

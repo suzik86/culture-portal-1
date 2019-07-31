@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
-import Architector from './architector/architector';
 import MainPage from './mainPage/MainPage';
+import Header from './Header';
+import Footer from './Footer';
+import Architector from './architector/Architector';
 
 import '../styles/App.css';
 
@@ -18,9 +20,10 @@ class App extends Component {
     const { data, team } = this.state;
     return (
       <div>
-        <h1>Culture Portal!</h1>
+        <Header />
         <MainPage team={team} data={data} />
         <Architector />
+        <Footer />
       </div>
     );
   }

@@ -1,20 +1,17 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
+import uniqid from 'uniqid';
 
-function WorkArchitector(props) {
-  const { work } = props;
-
-  const tableWork = Object.values(work.workInfo).map(function (item, i) {
-    return (
-      <tr>
-        <td>{i + 1}</td>
-        <td>{item}</td>
-      </tr>
-    )
-  })
+const Work = ({ work }) => {
+  const tableWork = Object.values(work.workInfo).map((item, i) => (
+    <tr key={uniqid()}>
+      <td>{i + 1}</td>
+      <td>{item}</td>
+    </tr>
+  ));
 
   return (
-    <div className='table'>
+    <div className="table">
       <h3>{work.workTitle}</h3>
       <Table striped bordered hover>
         <thead>
@@ -28,7 +25,7 @@ function WorkArchitector(props) {
         </tbody>
       </Table>
     </div>
-  )
-}
+  );
+};
 
-export default WorkArchitector;
+export default Work;

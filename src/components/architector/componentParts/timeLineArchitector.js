@@ -2,21 +2,19 @@ import React from 'react';
 
 import TimeLineRender from './utils/TimeLineRender';
 
-function TimeLineArchitector(props) {
-  const { detailedBiographyDate, detailedBiographyText } = props.timeLine;
+const TimeLineArchitector = ({ timeLine }) => {
+  const detailed = [];
 
-  let detailed = [];
-
-  for (let i = 0; i < detailedBiographyDate.length; i += 1) {
+  for (let i = 0; i < timeLine.detailedBiographyDate.length; i += 1) {
     detailed[i] = {
-      detailedBiographyDate: detailedBiographyDate[i],
-      detailedBiographyText: detailedBiographyText[i]
-    }
+      detailedBiographyDate: timeLine.detailedBiographyDate[i],
+      detailedBiographyText: timeLine.detailedBiographyText[i],
+    };
   }
 
   return (
     <TimeLineRender detailed={detailed} />
-  )
-}
+  );
+};
 
 export default TimeLineArchitector;

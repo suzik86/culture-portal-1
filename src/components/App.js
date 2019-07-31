@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-import Architector from './architector/architector';
+import Architector from './architector/Architector';
 
 import '../styles/App.css';
 
 class App extends Component {
-
   render() {
     return (
       <div>

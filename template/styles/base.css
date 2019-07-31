@@ -14,6 +14,7 @@
 nav .logo {
   font-size: 1.6em;
   line-height: 1em;
+  padding-left: 25px;
 }
 
 nav .logo span {
@@ -24,6 +25,11 @@ nav .logo span::first-letter {
   color: red;
 }
 
+.menu {
+  font-size: 1.3em;
+  padding-left: 100px;
+}
+
 .main {
   margin-top: 40px;
 }
@@ -31,9 +37,12 @@ nav .logo span::first-letter {
 .footer {
   width: 100%;
   background-color: lightgray;
-  height: 70px;   
+  height: 70px;
 }
 
 .footer_corypight {
-margin-left: 40%;
+  display: inline-block;
+  margin-top: 23px;
+  margin-left: 10%;
 }
+

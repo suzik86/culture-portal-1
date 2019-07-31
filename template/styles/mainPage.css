@@ -6,23 +6,22 @@ section {
   margin: 20px;
 }
 
-.about {
-  
-}
-
-.architect-of-the-day {
-  
-}
 .architect-of-the-day img {
-  margin: 15px;
+  margin: 15px 15px 15px 0;
 }
 
 .architect-of-the-day a {
   color: #000;
 }
-.developers-team {
-  
+
+.developers-team h2 {
+  margin-bottom: 20px;
 }
+
+.developers-team img {
+  margin-bottom: 15px;
+}
+
 .developers-team .developer-name{
   font-weight: 600;
 }

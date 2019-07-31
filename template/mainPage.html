@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Architects of Belarus</title>
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/mainPage.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/mainPage.css">
+  <!-- MDBootstrap flags -->
+  <link href="css/addons/flag.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -17,25 +19,27 @@
 <body>
     <header class="header">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">                  
-          <a class="logo navbar-brand" href="#"><span>Архитекторы</span><span> Беларуси</span></a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="logo navbar-brand" href="./mainPage.html"><span>Архитекторы</span><span> Беларуси</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <ul class="navbar-nav mr-auto">
+            <ul class="menu navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Архитекторы</a>
-              </li>                      
-            </ul> 
+                <a class="nav-link" href="./architectsListPage.html">Все архитекторы</a>
+              </li>
+            </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span> English</a>
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="russia flag"></i> Russian</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown09">
-                        <a class="dropdown-item" href="#fr"><span class="flag-icon flag-icon-fr"> </span>  French</a>
-                        <a class="dropdown-item" href="#it"><span class="flag-icon flag-icon-it"> </span>  Italian</a>
-                        <a class="dropdown-item" href="#ru"><span class="flag-icon flag-icon-ru"> </span>  Russian</a>
+                        <a class="dropdown-item" href="#us"><i class="united states flag"></i>  English</a>
+                        <a class="dropdown-item" href="#by"><i class="belarus flag"></i>  Belarusian</a>
                     </div>
-                </li>     
-            </ul>           
+                </li>
+            </ul>
 
           </div>
         </nav>
@@ -57,54 +61,54 @@
                   <p>
                       "...Меняется лик земли. И только перо летописца дерзает удержать на ветхих страницах хартий приметы текучего вихря,
                       исчезающего в небытии. Трудись, летописец! Ветер времени листает страницы судьбы", — писал Дмитрий Балашов,
-                       "реконструировавший" по разрозненным летописным, архивным источникам историю не одного народа. 
+                       "реконструировавший" по разрозненным летописным, архивным источникам историю не одного народа.
                   </p>
 
                   <p>
-                      С чего все начиналось у нас, кто стоял у истоков творческого союза, кто направлял и претворял поставленные 
+                      С чего все начиналось у нас, кто стоял у истоков творческого союза, кто направлял и претворял поставленные
                       жизнью задачи? Историческая хроника, запечатленная в документах, постановлениях, резолюциях, приоткрывает нам
                        завесу времени, доносит стиль творчества и руководства, настроения и устремления нескольких поколений зодчих.
-                       Все это прочитывается и между строк документов, и в авторских произведениях. В них — дух эпохи, сложной и 
-                       неоднозначной, жизнь и творческие порывы людей, посвятивших себя Архитектуре. В них — история творческого 
+                       Все это прочитывается и между строк документов, и в авторских произведениях. В них — дух эпохи, сложной и
+                       неоднозначной, жизнь и творческие порывы людей, посвятивших себя Архитектуре. В них — история творческого
                        содружества людей. А над всем этим — дыхание Вечности.
-                  </p>        
-                      
+                  </p>
+
                   <p>
-                      С чего все начиналось у нас, кто стоял у истоков творческого союза, кто направлял и претворял поставленные 
+                      С чего все начиналось у нас, кто стоял у истоков творческого союза, кто направлял и претворял поставленные
                       жизнью задачи? Историческая хроника, запечатленная в документах, постановлениях, резолюциях, приоткрывает нам
                        завесу времени, доносит стиль творчества и руководства, настроения и устремления нескольких поколений зодчих.
-                       Все это прочитывается и между строк документов, и в авторских произведениях. В них — дух эпохи, сложной и 
-                       неоднозначной, жизнь и творческие порывы людей, посвятивших себя Архитектуре. В них — история творческого 
+                       Все это прочитывается и между строк документов, и в авторских произведениях. В них — дух эпохи, сложной и
+                       неоднозначной, жизнь и творческие порывы людей, посвятивших себя Архитектуре. В них — история творческого
                        содружества людей. А над всем этим — дыхание Вечности.
-                  </p>    
-                      
+                  </p>
+
                 </section>
 
                 <section class="architect-of-the-day col-md">
 
                     <h2>Архитектор дня</h2>
-                    <a href="#"><h4>Карако Виктор Иванович</h4></a>
+                    <a href="./architectPage.html"><h4>Карако Виктор Иванович</h4></a>
                     <img src="./images/Karako_Victor.jpg" alt="Карако Виктор Иванович" width="250" align="left">
                     <p>Виктор Иванович Карако родился 29 июля 1948 в Гродно, Белорусская ССР. В 1966—1972 гг.
                        учился на кафедре архитектуры Белорусского политехнического института. С 1975 г. член
-                        Белорусского союза архитекторов. В 1972—1976 и 1982—1998 гг. работал архитектором, 
+                        Белорусского союза архитекторов. В 1972—1976 и 1982—1998 гг. работал архитектором,
                         старшим архитектором, главным архитектор проектов, руководителем мастерской в «БЕЛГОСПРОЕКТе».
                          В 1976—1982 гг. руководитель группы архитекторов, главный архитектор проектов, руководитель
                           мастерской БелНИИПградостроительства. В 1982 г. стал лауреатом премии Ленинского Комсомола
-                           Белоруссии в области архитектуры за проект дворца молодёжи в г. Новополоцке. С 1998 г. 
-                           возглавляет собственную творческую мастерскую. С 2003 г. преподает проектирование на 
+                           Белоруссии в области архитектуры за проект дворца молодёжи в г. Новополоцке. С 1998 г.
+                           возглавляет собственную творческую мастерскую. С 2003 г. преподает проектирование на
                            архитектурном факультете Беларуского национального технического университета. С 2005 г.
-                            является членом правления Белорусского союза архитекторов, председателем городской 
+                            является членом правления Белорусского союза архитекторов, председателем городской
                             организации БСА и членом Городского Монументально-декоративного Совета.
                     </p>
-                     
+
                 </section>
             </div>
             <div class="row">
                 <section class="developers-team col-md">
                   <h2>Наша команда</h2>
                   <div class="container-fluid">
-                      <div class="row">          
+                      <div class="row">
                           <div class="col-md">
                             <img src="./images/36624664.jpg" alt="Александр Самусевич" width="150">
                             <p class="developer-name">Александр Самусевич</p>
@@ -131,13 +135,13 @@
                             <p>Создал компонент для отрисовки информации по авторам...</p>
                           </div>
                       </div>
-                  
+
                 </section>
             </div>
-    </main>        
-        
+    </main>
+
   <footer class="footer">
-     <span class="footer_corypight">copyright © Rolling Scopes School 2019</span>       
+     <span class="footer_corypight">copyright © Rolling Scopes School 2019</span>
   </footer>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

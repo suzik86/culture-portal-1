@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
@@ -22,15 +20,11 @@ class Developer extends Component {
     const { name } = this.state;
     const { contribution } = this.state;
     return (
-      <Container>
-        <Row>
-          <Col>
-            <Image src={photo} rounded />
-            <h3>{name}</h3>
-            <p>{contribution}</p>
-          </Col>
-        </Row>
-      </Container>
+      <Col>
+        <Image src={photo} rounded />
+        <h3>{name}</h3>
+        <p>{contribution}</p>
+      </Col>
     );
   }
 }

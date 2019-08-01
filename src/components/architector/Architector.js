@@ -12,12 +12,16 @@ import Biography from './componentParts/Biography';
 import TimeLine from './componentParts/TimeLine';
 import Work from './componentParts/Work';
 import CarouselCustom from './componentParts/CarouselCustom';
-// import GoogleMap from './componentParts/GoogleMap';
+import GoogleMapCustom from './componentParts/GoogleMapCustom';
 
 class Architector extends Component {
   constructor(props) {
     super(props);
     this.data = props.data;
+    this.coords = {
+      lat: -36.122,
+      lng: 150.644,
+    };
   }
 
   render() {
@@ -33,7 +37,13 @@ class Architector extends Component {
             <TimeLine detailedBiography={this.data.detailedBiography} />
             <Work work={this.data.work} />
             <CarouselCustom gallery={this.data.work.project} />
-            {/* <GoogleMap /> */}
+            <GoogleMapCustom
+              coords={this.coords}
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQRMINVwXbc2OCz7e5XBhMgx9yWTM_HTw&v=3.exp&libraries=geometry,drawing,places"
+              loadingElement={<div style={{ height: '100%' }} />}
+              containerElement={<div style={{ height: '400px' }} />}
+              mapElement={<div style={{ height: '100%' }} />}
+            />
           </Col>
         </Row>
       </Container>

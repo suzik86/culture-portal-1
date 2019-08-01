@@ -501,8 +501,10 @@
       "title": "The Architects",
       "title1": "Of Belarus",
       "aboutPortal": "About the portal",
+      "aboutPortalArticle": "The Belarusian Union of Architects is over 80 years old. Its history is part of the history of the country and the people, its creative activity. A long and difficult path has been passed - the path of search and embodiment, mistakes and achievements. And today's Belarus reveals to the world its beautiful renewed face thanks to the talent and skill, professional skill of architects, whose tireless work has grown over the years the treasury of Belarusian architecture. Our team has created a portal about architects of Belarus.",
       "persons": "All architects",
-      "mainPerson": "Architect of the day"
+      "mainPerson": "Architect of the day",
+      "inputPlaceholder": "Enter architect's surname or his birthplace"
     }
   }
 }

@@ -25,7 +25,7 @@ class App extends Component {
     // const listLength = data.author.length;
     return (
       <div>
-        <Header />
+        <Header site={data.site} />
         {/* <MainPage team={team} data={data} /> */}
         <Architector data={data.author[targetArch]} />
         <Footer />

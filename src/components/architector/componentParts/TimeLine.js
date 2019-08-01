@@ -1,19 +1,32 @@
 import React from 'react';
 
-import TimeLineRender from './utils/TimeLineRender';
+import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import uniqid from 'uniqid';
 
-const TimeLine = ({ timeLine }) => {
-  const detailed = [];
+import randomColor from './utils/randomColor';
 
-  for (let i = 0; i < timeLine.detailedBiographyDate.length; i += 1) {
-    detailed[i] = {
-      detailedBiographyDate: timeLine.detailedBiographyDate[i],
-      detailedBiographyText: timeLine.detailedBiographyText[i],
-    };
-  }
+const TimeLine = ({ detailedBiography }) => {
+  const detailedForRender = detailedBiography.map(item => (
+    <TimelineItem
+      key={uniqid()}
+      dateText={item.date}
+      dateInnerStyle={{ background: randomColor(), color: 'rgb(0, 0, 0)' }}
+      bodyContainerStyle={{
+        padding: '0 20px',
+        borderRadius: '8px',
+        boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+      }}
+    >
+      <p>
+        {item.text}
+      </p>
+    </TimelineItem>
+  ));
 
   return (
-    <TimeLineRender detailed={detailed} />
+    <Timeline lineColor="rgb(221, 221, 221)">
+      {detailedForRender}
+    </Timeline>
   );
 };
 

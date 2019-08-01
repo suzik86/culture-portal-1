@@ -13,18 +13,18 @@ class App extends Component {
     this.state = {
       data: Ru,
       team: 'Наша команда',
+      targetArch: 0,
       // isLoading: true,
     };
   }
 
   render() {
-    const { data, team } = this.state;
-    console.log(Ru);
+    const { data, team, targetArch } = this.state;
     return (
       <div>
         <Header />
         <MainPage team={team} data={data} />
-        <Architector />
+        <Architector data={data.author[targetArch]} />
         <Footer />
       </div>
     );

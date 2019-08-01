@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Ru from '../json/ru';
-import MainPage from './mainPage/MainPage';
-import Header from './Header';
-import Footer from './Footer';
-import Architector from './architector/Architector';
 
 import '../styles/App.css';
+
+import Architector from './Architector/Architector';
+import MainPage from './MainPage/MainPage';
+import Header from './Header';
+import Footer from './Footer';
+import Ru from '../json/ru';
 
 class App extends Component {
   constructor(props) {
@@ -13,14 +14,12 @@ class App extends Component {
     this.state = {
       data: Ru,
       team: 'Наша команда',
-      // isLoading: true,
     };
   }
 
   render() {
     const { data, team } = this.state;
     const listLength = data.author.length;
-    console.log(Ru);
     return (
       <div>
         <Header />

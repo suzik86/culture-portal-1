@@ -4,6 +4,8 @@ import uniqid from 'uniqid';
 
 const Work = ({ work }) => {
   const tableWork = Object.values(work.workInfo).map((item, i) => (
+  // TODO сменить объект на массив
+  // const tableWork = work.workInfo.map(item => (
     <tr key={uniqid()}>
       <td>{i + 1}</td>
       <td>{item}</td>

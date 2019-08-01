@@ -1,14 +1,14 @@
 import React from 'react';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
-import uuidv1 from 'uniqid';
+import uniqid from 'uniqid';
 
 import randomColor from './utils/randomColor';
 
-const TimeLine = ({ detailed }) => {
-  const detailedForRender = detailed.map(item => (
+const TimeLine = ({ detailedBiography }) => {
+  const detailedForRender = detailedBiography.map(item => (
     <TimelineItem
-      key={uuidv1()}
-      dateText={item.detailedBiographyDate}
+      key={uniqid()}
+      dateText={item.date}
       dateInnerStyle={{ background: randomColor(), color: 'rgb(0, 0, 0)' }}
       bodyContainerStyle={{
         padding: '0 20px',
@@ -17,7 +17,7 @@ const TimeLine = ({ detailed }) => {
       }}
     >
       <p>
-        {item.detailedBiographyText}
+        {item.text}
       </p>
     </TimelineItem>
   ));

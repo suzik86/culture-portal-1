@@ -4,24 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      flag: 'russia flag',
-      language: 'Russian',
-    };
-    this.changeLanguage = this.changeLanguage.bind(this);
-  }
-
-  changeLanguage(flag, lang) {
-    this.setState(() => ({
-      flag: `${flag} flag`,
-      language: lang,
-    }));
-  }
-
   render() {
-    const { flag, language } = this.state;
     return (
       <Navbar className="header" expand="lg">
         <Navbar.Brand className="logo" href="#home">
@@ -33,17 +16,17 @@ class Header extends Component {
           <Nav className="mr-auto menu">
             <Nav.Link href="#list">Все архитекторы</Nav.Link>
           </Nav>
-          <i className={flag} />
-          <NavDropdown title={language} id="basic-nav-dropdown">
-            <NavDropdown.Item href="#rus" onClick={() => this.changeLanguage('russia', 'Russian')}>
+          <i className="russia flag" />
+          <NavDropdown title="Russian" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#rus" onClick={this.handleClick}>
               <i className="russia flag" />
               Russian
             </NavDropdown.Item>
-            <NavDropdown.Item href="#us" onClick={() => this.changeLanguage('united states', 'English')}>
+            <NavDropdown.Item href="#us">
               <i className="united states flag" />
               English
             </NavDropdown.Item>
-            <NavDropdown.Item href="#by" onClick={() => this.changeLanguage('belarus', 'Belarusian')}>
+            <NavDropdown.Item href="#by">
               <i className="belarus flag" />
               Belarusian
             </NavDropdown.Item>

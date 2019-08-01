@@ -9,7 +9,7 @@ import Name from './componentParts/Name';
 import YearsLife from './componentParts/YearsLife';
 import Location from './componentParts/Location';
 import Biography from './componentParts/Biography';
-import TimeLine from './componentParts/TimeLine';
+import TimeLineContainer from './componentParts/TimeLineContainer';
 import Work from './componentParts/Work';
 import CarouselCustom from './componentParts/CarouselCustom';
 import VideoCustom from './componentParts/VideoCustom';

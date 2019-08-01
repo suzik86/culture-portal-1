@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
 class ArchitectOfTheDay extends Component {
@@ -17,17 +14,11 @@ class ArchitectOfTheDay extends Component {
 
     return (
       <section>
-        <Container>
-          <Row>
-            <Col>
-              <Image src={architect.photo} alt={architect.name} width="250" rounded />
-              <h3>{architect.name}</h3>
-              <p>
-                {ArchitectOfTheDay.cutDescription(architect.descriptionShort, 300)}
-              </p>
-            </Col>
-          </Row>
-        </Container>
+        <Image src={architect.photo} alt={architect.name} width="250" rounded />
+        <h3>{architect.name}</h3>
+        <p>
+          {ArchitectOfTheDay.cutDescription(architect.descriptionShort, 300)}
+        </p>
       </section>
     );
   }

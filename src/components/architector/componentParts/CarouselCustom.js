@@ -1,8 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import uniqid from 'uniqid';
+import uuidv1 from 'uniqid';
 
 const CarouselCustom = ({ gallery }) => {
+
   const imageForCarousel = gallery.map(item => (
     <Carousel.Item key={uniqid()}>
       <img
@@ -15,7 +16,7 @@ const CarouselCustom = ({ gallery }) => {
 
   return (
     <Carousel>
-      {imageForCarousel}
+      {imagesForCarousel}
     </Carousel>
   );
 };

@@ -16,7 +16,7 @@ class MainPage extends Component {
 
   render() {
     const { data, team } = this.props;
-    const architect = MainPage.getRandomArchitect(data);
+    const architect = MainPage.getRandomArchitect(data.author);
 
     return (
       <main>

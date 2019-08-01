@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Architector from './architector/Architector';
 
 import '../styles/App.css';
+import '../../node_modules/react-modal-video/css/modal-video.min.css';
 
 class App extends Component {
   constructor(props) {

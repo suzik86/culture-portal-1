@@ -12,6 +12,7 @@ import Biography from './componentParts/Biography';
 import TimeLine from './componentParts/TimeLine';
 import Work from './componentParts/Work';
 import CarouselCustom from './componentParts/CarouselCustom';
+import VideoCustom from './componentParts/VideoCustom';
 import GoogleMapCustom from './componentParts/GoogleMapCustom';
 
 class Architector extends Component {
@@ -37,9 +38,10 @@ class Architector extends Component {
             <TimeLine detailedBiography={this.data.detailedBiography} />
             <Work work={this.data.work} />
             <CarouselCustom gallery={this.data.work.project} />
+            <VideoCustom />
             <GoogleMapCustom
               coords={this.coords}
-              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlenTY9JOxetvVWBrCyB7CHM0mJzp1YCQ&v=3.exp"
               loadingElement={<div style={{ height: '100%' }} />}
               containerElement={<div style={{ height: '400px' }} />}
               mapElement={<div style={{ height: '100%' }} />}

@@ -3,10 +3,9 @@ import {
   GoogleMap,
   Marker,
   withGoogleMap,
-  withScriptjs,
 } from 'react-google-maps';
 
-const GoogleMapCustom = withScriptjs(withGoogleMap(({ coords }) => (
+const GoogleMapCustom = withGoogleMap(({ coords }) => (
   <GoogleMap
     defaultZoom={8}
     defaultCenter={{ lat: coords.lat, lng: coords.lng }}
@@ -15,6 +14,6 @@ const GoogleMapCustom = withScriptjs(withGoogleMap(({ coords }) => (
       position={{ lat: coords.lat, lng: coords.lng }}
     />
   </GoogleMap>
-)));
+));
 
 export default GoogleMapCustom;

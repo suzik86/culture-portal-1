@@ -9,15 +9,17 @@ import OurTeam from './componentParts/OurTeam';
 
 
 class MainPage extends Component {
-  static getRandomArchitect(architects) {
-    const randomIndex = Math.floor(Math.random() * (architects.length - 1));
-    return architects[randomIndex];
+  todayIndex() {
+    const { listLength } = this.props;
+    const dateOfYear = Math.round((Date.now()
+    - Date.parse(new Date().getFullYear(), 0, 0)) / 86400000);
+    console.log(dateOfYear, listLength, dateOfYear % listLength);
+    return dateOfYear > listLength ? dateOfYear % listLength : dateOfYear;
   }
 
   render() {
     const { data, team } = this.props;
-    const architect = MainPage.getRandomArchitect(data.author);
-
+    const architect = data.author[this.todayIndex()];
     return (
       <main>
         <Container>

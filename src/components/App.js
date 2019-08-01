@@ -19,10 +19,11 @@ class App extends Component {
 
   render() {
     const { data, team } = this.state;
+    const listLength = data.author.length;
     return (
       <div>
         <Header />
-        <MainPage team={team} data={data} />
+        <MainPage team={team} data={data} listLength={listLength} />
         <Architector />
         <Footer />
       </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Row from 'react-bootstrap/Row';
 
-import Developer from './utils/Developer';
+import Developer from './Developer';
 
 class OurTeam extends Component {
   render() {

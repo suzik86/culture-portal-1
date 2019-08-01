@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Architector from './architector/Architector';
+import ArchitectsList from './architectsList/ArchitectsList';
 import MainPage from './mainPage/MainPage';
 import Header from './Header';
 import Footer from './Footer';
@@ -26,6 +27,7 @@ class App extends Component {
       <div>
         <Header site={data.translation.site} />
         <MainPage listLength={listLength} data={data} />
+        <ArchitectsList data={data} />
         <Architector data={data.translation.author[targetArch]} />
         <Footer />
       </div>

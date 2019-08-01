@@ -24,7 +24,7 @@ class App extends Component {
     const listLength = data.translation.author.length;
     return (
       <div>
-        <Header />
+        <Header site={data.translation.site} />
         <MainPage listLength={listLength} data={data} />
         <Architector data={data.translation.author[targetArch]} />
         <Footer />

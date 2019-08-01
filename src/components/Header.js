@@ -32,7 +32,7 @@ class Header extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto menu">
-            <Nav.Link href="#list">Все архитекторы</Nav.Link>
+            <Nav.Link href="#list">{site.persons}</Nav.Link>
           </Nav>
           <i className={flag} />
           <NavDropdown title={language} id="basic-nav-dropdown">

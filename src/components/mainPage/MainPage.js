@@ -18,21 +18,21 @@ class MainPage extends Component {
   }
 
   render() {
-    const { data, team } = this.props;
+    const { data } = this.props;
     const architect = data.author[this.todayIndex()];
     return (
       <main>
         <Container>
           <Row>
             <Col>
-              <AboutThePortal />
+              <AboutThePortal data={data} />
             </Col>
             <Col>
               <ArchitectOfTheDay architect={architect} />
             </Col>
           </Row>
           <Row>
-            <OurTeam team={team} />
+            <OurTeam data={data} />
           </Row>
         </Container>
       </main>

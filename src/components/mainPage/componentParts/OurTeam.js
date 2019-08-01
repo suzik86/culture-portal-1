@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
+import Row from 'react-bootstrap/Row';
 
 import Developer from './Developer';
 
 class OurTeam extends Component {
-  constructor(props) {
-    super(props);
-    const { team } = this.props;
-    this.state = {
-      team: team || 'Наша команда',
-    };
-  }
-
   render() {
-    const { team } = this.state;
+    const { data } = this.props;
+    const { team } = data.crew;
+
     return (
       <section>
         <h3>{ team }</h3>
-        <Developer />
+        <Row>
+          {/* {team.forEach((element, i) => {
+            <Developer index={i} data={data} />;
+          })
+          } */}
+          <Developer data={data} />
+        </Row>
       </section>
     );
   }

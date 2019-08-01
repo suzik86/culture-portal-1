@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import '../styles/App.css';
 
-import Architector from './Architector/Architector';
-import MainPage from './MainPage/MainPage';
+import Architector from './architector/Architector';
+import MainPage from './mainPage/MainPage';
 import Header from './Header';
 import Footer from './Footer';
 import Ru from '../json/ru';
@@ -13,17 +13,18 @@ class App extends Component {
     super(props);
     this.state = {
       data: Ru,
-      team: 'Наша команда',
+      // isLoading: true,
     };
   }
 
   render() {
-    const { data, team } = this.state;
+    const { data } = this.state;
+    console.log(data);
     const listLength = data.author.length;
     return (
       <div>
         <Header />
-        <MainPage team={team} data={data} listLength={listLength} />
+        <MainPage data={data} listLength={listLength} />
         <Architector />
         <Footer />
       </div>

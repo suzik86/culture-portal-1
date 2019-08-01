@@ -4,7 +4,7 @@ class AboutThePortal extends Component {
   render() {
     const { data } = this.props;
     const title = data.translation.site.aboutPortal;
-    const description = 'Белорусскому союзу архитекторов...';
+    const description = data.translation.site.aboutPortalArticle;
     return (
       <section>
         <h3>{title}</h3>

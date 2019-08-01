@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Developer from './utils/Developer';
+import Developer from './Developer';
 
 class OurTeam extends Component {
   constructor(props) {

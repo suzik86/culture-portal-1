@@ -5,11 +5,9 @@ import Image from 'react-bootstrap/Image';
 class Developer extends Component {
   constructor(props) {
     super(props);
-    const { photo } = this.props;
-    const { name } = this.props;
-    const { contribution } = this.props;
+    const { photo, name, contribution } = props;
     this.state = {
-      photo: photo || 'template/images/36624664.jpg',
+      photo: photo || 'src/assets/images/36624664.jpg',
       name: name || 'Александр Самусевич',
       contribution: contribution || 'Создал json-файл с информацией об архитекторах и команде разработчиков, функцию переключения языков...',
     };
@@ -17,7 +15,6 @@ class Developer extends Component {
 
   render() {
     const { photo, name, contribution } = this.state;
-    console.log(photo, name, contribution);
     return (
       <Col>
         <Image src={photo} rounded />

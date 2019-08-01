@@ -22,11 +22,12 @@ class Header extends Component {
 
   render() {
     const { flag, language } = this.state;
+    const { site } = this.props;
     return (
       <Navbar className="header" expand="lg">
         <Navbar.Brand className="logo" href="#home">
-          <span>Архитекторы</span>
-          <span> Беларуси</span>
+          <span>{site.title}</span>
+          <span>{site.title1}</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -39,7 +39,7 @@ class Architector extends Component {
             <CarouselCustom gallery={this.data.work.project} />
             <GoogleMapCustom
               coords={this.coords}
-              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQRMINVwXbc2OCz7e5XBhMgx9yWTM_HTw&v=3.exp&libraries=geometry,drawing,places"
+              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
               loadingElement={<div style={{ height: '100%' }} />}
               containerElement={<div style={{ height: '400px' }} />}
               mapElement={<div style={{ height: '100%' }} />}

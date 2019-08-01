@@ -12,18 +12,17 @@ class App extends Component {
     super(props);
     this.state = {
       data: Ru,
-      team: 'Наша команда',
       // isLoading: true,
     };
   }
 
   render() {
-    const { data, team } = this.state;
-    console.log(Ru);
+    const { data } = this.state;
+    console.log(data);
     return (
       <div>
         <Header />
-        <MainPage team={team} data={data} />
+        <MainPage data={data} />
         <Architector />
         <Footer />
       </div>

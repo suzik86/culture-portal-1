@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { withTranslation } from 'react-i18next';
 
 import ArchitectOfTheDay from './componentParts/ArchitectOfTheDay';
 import AboutThePortal from './componentParts/AboutThePortal';
@@ -17,14 +18,16 @@ class MainPage extends Component {
   }
 
   render() {
-    const { data } = this.props;
-    const architectOfTheDay = data.translation.author[this.todayIndex()];
+    const { t } = this.props;
+    const site = t('site', { returnObjects: true });
+    const architects = t('architects', { returnObjects: true });
+    const architectOfTheDay = architects[this.todayIndex()];
     return (
       <main>
         <Container>
           <Row>
             <Col>
-              <AboutThePortal data={data} />
+              <AboutThePortal site={site} />
             </Col>
             <Col>
               <ArchitectOfTheDay architect={architectOfTheDay} />
@@ -39,4 +42,4 @@ class MainPage extends Component {
   }
 }
 
-export default MainPage;
+export default withTranslation()(MainPage);

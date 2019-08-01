@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { withTranslation } from 'react-i18next';
+
 
 class Header extends Component {
   constructor(props) {
@@ -22,12 +24,14 @@ class Header extends Component {
 
   render() {
     const { flag, language } = this.state;
-    const { site } = this.props;
+    const { t } = this.props;
+    const site = t('site', { returnObjects: true });
+
     return (
       <Navbar className="header" expand="lg">
         <Navbar.Brand className="logo" href="#home">
-          <span>{site.title}</span>
-          <span>{site.title1}</span>
+          <span>{t('site.title')}</span>
+          <span>{t('site.title1')}</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -55,4 +59,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withTranslation()(Header);

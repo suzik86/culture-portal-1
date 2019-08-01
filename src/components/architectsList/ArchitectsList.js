@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import uniqid from 'uniqid';
 import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
+import uniqid from 'uniqid';
+import { withTranslation } from 'react-i18next';
+
 import ArchitectShortArticle from './ArchitectShortArticle';
 import SearchWidget from './SearchWidget';
 // import NotFoundMessage from './NotFoundMessage';
@@ -12,16 +13,17 @@ class ArchitectsList extends Component {
   // }
 
   render() {
-    const { data } = this.props;
-    const { inputPlaceholder } = data.translation.site;
+    const { t } = this.props;
+    const inputPlaceholder = t('site.inputPlaceholder');
+    const architects = t('architects', { returnObjects: true });
     return (
       <Container>
         <SearchWidget placeholder={inputPlaceholder} onChange={this.inputTextHandler} />
-        {data.translation.author
+        {architects
           .map(item => <ArchitectShortArticle key={uniqid()} architect={item} />)}
       </Container>
     );
   }
 }
 
-export default ArchitectsList;
+export default withTranslation()(ArchitectsList);

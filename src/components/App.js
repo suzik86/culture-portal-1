@@ -1,38 +1,46 @@
 import React, { Component } from 'react';
-
-import Architector from './architector/Architector';
-import ArchitectsList from './architectsList/ArchitectsList';
-import MainPage from './mainPage/MainPage';
-import Header from './Header';
-import Footer from './Footer';
-import Ru from '../i18n/ru';
-import '../styles/App.css';
+import { withTranslation } from 'react-i18next';
 import '../../node_modules/react-modal-video/css/modal-video.min.css';
 
+import '../styles/App.css';
+
+import Architector from './architector/Architector';
+import MainPage from './mainPage/MainPage';
+import ArchitectsList from './architectsList/ArchitectsList';
+import Header from './Header';
+import Footer from './Footer';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: Ru,
       targetArch: 0,
-      // isLoading: true,
     };
   }
 
   render() {
-    const { data, targetArch } = this.state;
-    const listLength = data.translation.author.length;
+    const { t, i18n } = this.props;
+    const architects = t('architects', { returnObjects: true });
+    const listLength = architects.length;
+    const { targetArch } = this.state;
+
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+    };
+
     return (
       <div>
-        <Header site={data.translation.site} />
-        <MainPage listLength={listLength} data={data} />
-        <ArchitectsList data={data} />
-        <Architector data={data.translation.author[targetArch]} />
+        <button type="button" onClick={() => changeLanguage('en')}>en</button>
+        <button type="button" onClick={() => changeLanguage('ru')}>ru</button>
+        <button type="button" onClick={() => changeLanguage('by')}>by</button>
+        <Header />
+        <MainPage architects={architects} listLength={listLength} />
+        <Architector data={architects[targetArch]} />
+        <ArchitectsList />
         <Footer />
       </div>
     );
   }
 }
 
-export default App;
+export default withTranslation()(App);

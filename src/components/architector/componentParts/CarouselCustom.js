@@ -2,12 +2,10 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import uuidv1 from 'uniqid';
 
-
 const CarouselCustom = ({ gallery }) => {
-  const imagesForCarousel = Object.values(gallery).map(item => (
-  // TODO сменить объект на массив
-  // const imagesForCarousel = gallery.map(item => (
-    <Carousel.Item key={uuidv1()}>
+
+  const imageForCarousel = gallery.map(item => (
+    <Carousel.Item key={uniqid()}>
       <img
         className="d-block w-100"
         src={item}

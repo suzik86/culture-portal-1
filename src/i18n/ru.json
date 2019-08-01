@@ -1,6 +1,6 @@
 {
   "translation": {
-    "author": [
+    "architects": [
       {
         "photo": "http://odincrk.ru/wp-content/uploads/2016/09/Victor-Anikin_511x768.jpg",
         "name": "Аникин, Виктор Иванович",
@@ -468,10 +468,10 @@
       }
     ],
     "crew": {
-      "team": "Наша командаasdfadsfdasf",
+      "team": "Наша команда",
       "developer": [
         {
-          "name": "Александр Самусевич!!!!!!",
+          "name": "Александр Самусевич",
           "contribution": "Создал json-файл с информацией об архитекторах и команде разработчиков, функцию переключения языков...",
           "photo": "https://avatars0.githubusercontent.com/u/36624664?s=460&v=4"
         },

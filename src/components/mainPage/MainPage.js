@@ -13,13 +13,12 @@ class MainPage extends Component {
     const { listLength } = this.props;
     const dateOfYear = Math.round((Date.now()
     - Date.parse(new Date().getFullYear(), 0, 0)) / 86400000);
-    console.log(dateOfYear, listLength, dateOfYear % listLength);
     return dateOfYear > listLength ? dateOfYear % listLength : dateOfYear;
   }
 
   render() {
     const { data } = this.props;
-    const architect = data.translation.author[this.todayIndex()];
+    const architectOfTheDay = data.translation.author[this.todayIndex()];
     return (
       <main>
         <Container>
@@ -28,15 +27,14 @@ class MainPage extends Component {
               <AboutThePortal data={data} />
             </Col>
             <Col>
-              <ArchitectOfTheDay architect={architect} />
+              <ArchitectOfTheDay architect={architectOfTheDay} />
             </Col>
           </Row>
           <Row>
-            <OurTeam data={data} />
+            <OurTeam />
           </Row>
         </Container>
       </main>
-
     );
   }
 }

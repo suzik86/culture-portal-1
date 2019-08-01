@@ -9,16 +9,15 @@ class Developer extends Component {
     const { name } = this.props;
     const { contribution } = this.props;
     this.state = {
-      photo: { photo } || 'template/images/36624664.jpg',
-      name: { name } || 'Александр Самусевич',
-      contribution: { contribution } || 'Создал json-файл с информацией об архитекторах и команде разработчиков, функцию переключения языков...',
+      photo: photo || 'template/images/36624664.jpg',
+      name: name || 'Александр Самусевич',
+      contribution: contribution || 'Создал json-файл с информацией об архитекторах и команде разработчиков, функцию переключения языков...',
     };
   }
 
   render() {
-    const { photo } = this.state;
-    const { name } = this.state;
-    const { contribution } = this.state;
+    const { photo, name, contribution } = this.state;
+    console.log(photo, name, contribution);
     return (
       <Col>
         <Image src={photo} rounded />

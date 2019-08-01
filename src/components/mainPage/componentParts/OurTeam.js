@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import Developer from './Developer';
+import Developer from './utils/Developer';
 
 class OurTeam extends Component {
   constructor(props) {
     super(props);
     const { team } = this.props;
     this.state = {
-      team: { team } || 'Наша команда',
+      team: team || 'Наша команда',
     };
   }
 

@@ -1,28 +1,30 @@
 import React, { Component } from 'react';
-
+import { withTranslation } from 'react-i18next';
 import '../styles/App.css';
 
 import Architector from './Architector/Architector';
 import MainPage from './MainPage/MainPage';
 import Header from './Header';
 import Footer from './Footer';
-import Ru from '../json/ru';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: Ru,
-      team: 'Наша команда',
-    };
-  }
-
   render() {
-    const { data, team } = this.state;
+    const { t, i18n } = this.props;
+
+    const architects = t('architects', { returnObjects: true });
+    const listLength = architects.length;
+
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+    };
+
     return (
       <div>
+        <button type="button" onClick={() => changeLanguage('en')}>en</button>
+        <button type="button" onClick={() => changeLanguage('ru')}>ru</button>
+        <button type="button" onClick={() => changeLanguage('by')}>by</button>
         <Header />
-        <MainPage team={team} data={data} />
+        <MainPage architects={architects} listLength={listLength} />
         <Architector />
         <Footer />
       </div>
@@ -30,4 +32,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withTranslation()(App);

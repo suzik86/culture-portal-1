@@ -6,7 +6,7 @@ import Architector from './architector/Architector';
 import MainPage from './mainPage/MainPage';
 import Header from './Header';
 import Footer from './Footer';
-import Ru from '../json/ru';
+import Ru from '../i18n/ru';
 
 class App extends Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     const { data } = this.state;
     console.log(data);
-    const listLength = data.author.length;
+    const listLength = data.translation.author.length;
     return (
       <div>
         <Header />

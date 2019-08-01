@@ -19,7 +19,7 @@ class MainPage extends Component {
 
   render() {
     const { data } = this.props;
-    const architect = data.author[this.todayIndex()];
+    const architect = data.translation.author[this.todayIndex()];
     return (
       <main>
         <Container>

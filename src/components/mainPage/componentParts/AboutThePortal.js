@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class AboutThePortal extends Component {
   render() {
     const { data } = this.props;
-    const title = data.site.aboutPortal;
+    const title = data.translation.site.aboutPortal;
     const description = 'Белорусскому союзу архитекторов...';
     return (
       <section>

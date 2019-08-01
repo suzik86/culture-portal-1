@@ -1,22 +1,27 @@
 import React, { Component } from 'react';
 import Row from 'react-bootstrap/Row';
+import uniqid from 'uniqid';
 
 import Developer from './Developer';
 
 class OurTeam extends Component {
   render() {
     const { data } = this.props;
-    const { team } = data.crew;
-
+    const { developer } = data.translation.crew;
+    const { team } = data.translation.crew;
+    console.log(developer);
     return (
       <section>
         <h3>{ team }</h3>
         <Row>
-          {/* {team.forEach((element, i) => {
-            <Developer index={i} data={data} />;
-          })
-          } */}
-          <Developer data={data} />
+          {developer.map(item => (
+            <Developer
+              key={uniqid()}
+              name={item.name}
+              photo={item.photo}
+              contribution={item.contribution}
+            />
+          ))}
         </Row>
       </section>
     );

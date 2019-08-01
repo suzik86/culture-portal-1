@@ -15,8 +15,8 @@ class MainPage extends Component {
   }
 
   render() {
-    const { data, team } = this.props;
-    const architect = MainPage.getRandomArchitect(data.author);
+    const { architects } = this.props;
+    const architectOfTheDay = MainPage.getRandomArchitect(architects);
 
     return (
       <main>
@@ -26,15 +26,14 @@ class MainPage extends Component {
               <AboutThePortal />
             </Col>
             <Col>
-              <ArchitectOfTheDay architect={architect} />
+              <ArchitectOfTheDay architect={architectOfTheDay} />
             </Col>
           </Row>
           <Row>
-            <OurTeam team={team} />
+            <OurTeam />
           </Row>
         </Container>
       </main>
-
     );
   }
 }

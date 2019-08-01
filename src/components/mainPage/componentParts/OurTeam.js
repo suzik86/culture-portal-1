@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
+import { withTranslation } from 'react-i18next';
 
 import Developer from './Developer';
 
 class OurTeam extends Component {
-  constructor(props) {
-    super(props);
-    const { team } = this.props;
-    this.state = {
-      team: team || 'Наша команда',
-    };
-  }
-
   render() {
-    const { team } = this.state;
+    const { t } = this.props;
+    const team = t('crew.team');
+
     return (
       <section>
         <h3>{ team }</h3>
@@ -22,4 +17,4 @@ class OurTeam extends Component {
   }
 }
 
-export default OurTeam;
+export default withTranslation()(OurTeam);

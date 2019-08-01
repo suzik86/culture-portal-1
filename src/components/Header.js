@@ -25,6 +25,7 @@ class Header extends Component {
   render() {
     const { flag, language } = this.state;
     const { t } = this.props;
+    const site = t('site', { returnObjects: true });
 
     return (
       <Navbar className="header" expand="lg">

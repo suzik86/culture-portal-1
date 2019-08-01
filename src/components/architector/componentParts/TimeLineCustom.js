@@ -1,8 +1,5 @@
 import React from 'react';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
-import uuidv1 from 'uniqid';
-
-import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import uniqid from 'uniqid';
 
 import randomColor from './utils/randomColor';

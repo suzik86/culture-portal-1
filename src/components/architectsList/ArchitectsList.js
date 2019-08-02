@@ -13,14 +13,19 @@ class ArchitectsList extends Component {
   // }
 
   render() {
-    const { t } = this.props;
+    const { t, selectPersonHandler } = this.props;
     const inputPlaceholder = t('site.inputPlaceholder');
     const architects = t('architects', { returnObjects: true });
     return (
       <Container>
         <SearchWidget placeholder={inputPlaceholder} onChange={this.inputTextHandler} />
         {architects
-          .map(item => <ArchitectShortArticle key={uniqid()} architect={item} />)}
+          .map((item, i) => <ArchitectShortArticle 
+            key={uniqid()} 
+            architect={item} 
+            index={i} 
+            selectPersonHandler={selectPersonHandler}
+          />)}
       </Container>
     );
   }

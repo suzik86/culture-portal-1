@@ -10,6 +10,7 @@ class VideoCustom extends Component {
     };
     this.openModal = this.openModal.bind(this);
     this.idVideo = props.idVideo;
+    this.video = props.video;
   }
 
   openModal() {
@@ -21,7 +22,7 @@ class VideoCustom extends Component {
     return (
       <div>
         <ModalVideo channel="youtube" isOpen={isOpen} videoId={this.idVideo} onClose={() => this.setState({ isOpen: false })} />
-        <Button variant="primary" size="lg" block onClick={this.openModal}>Video</Button>
+        <Button variant="primary" size="lg" block onClick={this.openModal}>{this.video}</Button>
       </div>
     );
   }

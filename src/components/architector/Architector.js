@@ -19,6 +19,7 @@ class Architector extends Component {
     super(props);
     this.data = props.data;
     this.idVideo = props.site.idVideo;
+    this.video = props.site.video;
     this.coords = {
       lat: -36.122,
       lng: 150.644,
@@ -26,6 +27,7 @@ class Architector extends Component {
   }
 
   render() {
+    console.log(this.video)
     const location = {
       place: this.data.place,
       placeInfo: this.data.placeInfo,
@@ -48,7 +50,7 @@ class Architector extends Component {
               <TimeLineCustom detailedBiography={this.data.detailedBiography} />
               <Work work={this.data.work} />
               <CarouselCustom gallery={this.data.work.project} />
-              <VideoCustom idVideo={this.idVideo} />
+              <VideoCustom idVideo={this.idVideo} video={this.video} />
               <GoogleMapCustom src={this.data.coordsSrc} place={this.data.place} />
             </Col>
           </Row>

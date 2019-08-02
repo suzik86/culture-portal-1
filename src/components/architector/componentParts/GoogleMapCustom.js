@@ -1,19 +1,16 @@
 import React from 'react';
-import {
-  GoogleMap,
-  Marker,
-  withGoogleMap,
-} from 'react-google-maps';
+import Iframe from 'react-iframe';
 
-const GoogleMapCustom = withGoogleMap(({ coords }) => (
-  <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: coords.lat, lng: coords.lng }}
+const GoogleMapCustom = ({ src, place }) => (
+  <Iframe
+    src={src}
+    width="100%"
+    height="600"
+    frameborder="0"
+    allowfullscreen
   >
-    <Marker
-      position={{ lat: coords.lat, lng: coords.lng }}
-    />
-  </GoogleMap>
-));
+    {place}
+  </Iframe>
+);
 
 export default GoogleMapCustom;

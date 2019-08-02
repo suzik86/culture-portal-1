@@ -39,6 +39,7 @@ class App extends Component {
   render() {
     const { t, i18n } = this.props;
     const architects = t('architects', { returnObjects: true });
+    const site = t('site', { returnObjects: true });
     const listLength = architects.length;
     const { targetArch, contentType } = this.state;
 
@@ -56,7 +57,7 @@ class App extends Component {
       }
       case 'person': {
         content = (
-          <Architector data={architects[targetArch]} />
+          <Architector data={architects[targetArch]} site={site} />
         );
         break;
       }

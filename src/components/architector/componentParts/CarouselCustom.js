@@ -14,7 +14,7 @@ const CarouselCustom = ({ gallery }) => {
   ));
 
   return (
-    <Carousel>
+    <Carousel fade>
       {imagesForCarousel}
     </Carousel>
   );

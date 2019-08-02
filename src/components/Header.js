@@ -25,19 +25,19 @@ class Header extends Component {
 
   render() {
     const { flag, language } = this.state;
-    const { t } = this.props;
+    const { t, selectContentHandler } = this.props;
     const site = t('site', { returnObjects: true });
 
     return (
       <Navbar className="header" expand="lg">
-        <Navbar.Brand className="logo" href="#home">
+        <Navbar.Brand className="logo" href="#home" onClick={() => selectContentHandler('main')}>
           <span>{t('site.title')}</span>
           <span>{t('site.title1')}</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto menu">
-            <Nav.Link href="#list">{site.persons}</Nav.Link>
+            <Nav.Link href="#list" onClick={() => selectContentHandler('list')}>{site.persons}</Nav.Link>
           </Nav>
           <i className={flag} />
           <NavDropdown title={language} id="basic-nav-dropdown">

@@ -10,14 +10,14 @@ const cutArticle = (article, maxLength) => {
   return article;
 };
 
-const architectShortArticle = ({ architect }) => (
+const architectShortArticle = ({ architect, index, selectPersonHandler }) => (
   <Row>
     <Col>
       <Image src={architect.photo} alt={architect.name} width="150" rounded />
     </Col>
     <Col>
       <Row>
-        <h3>{architect.name}</h3>
+        <h3 onClick={() => selectPersonHandler('person', index)}>{architect.name}</h3>
       </Row>
       <Row>
         <p>

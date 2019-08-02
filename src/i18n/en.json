@@ -501,7 +501,7 @@
         {
           "name": "Aliaksandr Liakhavets",
           "contribution": "Created a component to render information to the authors...",
-          "photo": "https://avatars0.githubusercontent.com/u/47753284?s=460&v=4"
+          "photo": "https://avatars3.githubusercontent.com/u/47753284?s=400&u=316b7133f25c8587dd27a42b6da96b843be7acd8&v=4"
         }
       ]
     },
@@ -513,6 +513,7 @@
       "persons": "All architects",
       "mainPerson": "Architect of the day",
       "inputPlaceholder": "Введите фамилию архитектора или место его рождения",
+      "video": "Video",
       "idVideo": "XQlJAiUZOrM"
     }
   }

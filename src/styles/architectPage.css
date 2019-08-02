@@ -33,6 +33,14 @@
   margin: 0 auto;
 }
 
+.img-carousel {
+  object-fit: cover;
+  height: 600px;
+}
+
+.photo-architector {
+  max-width: 300px;
+}
 /* <!--стили для временной линии-->
 ul.timeline {
   list-style-type: none;

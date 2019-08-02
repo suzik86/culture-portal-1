@@ -496,7 +496,7 @@
         {
           "name": "Александр Павлюковец",
           "contribution": "Создал навигацию, объеденил все кусочки кода в один проект...",
-          "photo": "https://avatars3.githubusercontent.com/u/43214837?s=460&v=4"
+          "photo": "https://avatars3.githubusercontent.com/u/47753284?s=400&u=316b7133f25c8587dd27a42b6da96b843be7acd8&v=4"
         },
         {
           "name": "Александр Ляховец",
@@ -513,6 +513,7 @@
       "persons": "Все архитекторы",
       "mainPerson": "Архитектор дня",
       "inputPlaceholder": "Введите фамилию архитектора или место его рождения",
+      "video": "Видео",
       "idVideo": "XQlJAiUZOrM"
     }
   }

@@ -69,8 +69,8 @@ class App extends Component {
 
     return (
       <div>
-        <Header 
-          changeLanguageHandler={(lang) => changeLanguage(lang)} 
+        <Header
+          changeLanguageHandler={(lang) => changeLanguage(lang)}
           selectContentHandler={this.selectContentHandler}
         />
         {content}

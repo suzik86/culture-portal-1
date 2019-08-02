@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Location = ({ place, placeInfo }) => (
+const Location = ({ location }) => (
   <p>
-    <span>{place}</span>
-    <span>{placeInfo}</span>
+    <span>{location.place}</span>
+    <span>{location.placeInfo}</span>
   </p>
 );
 

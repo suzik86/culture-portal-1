@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Biography = ({ title, description }) => (
+const Biography = ({ biography }) => (
   <div>
-    <h3>{title}</h3>
-    <p>{description}</p>
+    <h3>{biography.title}</h3>
+    <p>{biography.description}</p>
   </div>
 );
 

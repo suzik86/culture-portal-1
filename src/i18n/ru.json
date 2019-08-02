@@ -511,6 +511,7 @@
       "persons": "Все архитекторы",
       "mainPerson": "Архитектор дня",
       "inputPlaceholder": "Введите имя архитектора или место его рождения",
+      "notFound": "Ничего не найдено",
       "video": "Видео",
       "idVideo": "XQlJAiUZOrM"
     }

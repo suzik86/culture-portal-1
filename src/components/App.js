@@ -57,7 +57,7 @@ class App extends Component {
       }
       case 'person': {
         content = (
-          <Architector data={architects[targetArch]} site={site} />
+          <Architector data={architects} targetArch={targetArch} site={site} />
         );
         break;
       }

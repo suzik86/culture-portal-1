@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withTranslation } from 'react-i18next';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -15,50 +16,41 @@ import VideoCustom from './componentParts/VideoCustom';
 import GoogleMapCustom from './componentParts/GoogleMapCustom';
 
 class Architector extends Component {
-  constructor(props) {
-    super(props);
-    this.data = props.data;
-    this.idVideo = props.site.idVideo;
-    this.video = props.site.video;
-    this.coords = {
-      lat: -36.122,
-      lng: 150.644,
-    };
-  }
-
   render() {
-    console.log(this.video)
+    const { t, targetArch } = this.props;
+    const data = t('architects', { returnObjects: true })[targetArch];
+    const site = t('site', { returnObjects: true });
     const location = {
-      place: this.data.place,
-      placeInfo: this.data.placeInfo,
+      place: data.place,
+      placeInfo: data.placeInfo,
     };
     const biography = {
-      title: this.data.biography,
-      description: this.data.descriptionShort,
+      title: data.biography,
+      description: data.descriptionShort,
     };
+    const { video, idVideo } = site;
 
     return (
       <main className="main">
         <Container className="container">
           <Row className="architect-description row">
             <Col className="col-md text-center">
-              <Photo url={this.data.photo} />
-              <Name name={this.data.name} />
-              <YearsLife life={this.data.life} />
+              <Photo url={data.photo} />
+              <Name name={data.name} />
+              <YearsLife life={data.life} />
               <Location location={location} />
               <Biography biography={biography} />
-              <TimeLineCustom detailedBiography={this.data.detailedBiography} />
-              <Work work={this.data.work} />
-              <CarouselCustom gallery={this.data.work.project} />
-              <VideoCustom idVideo={this.idVideo} video={this.video} />
-              <GoogleMapCustom src={this.data.coordsSrc} place={this.data.place} />
+              <TimeLineCustom detailedBiography={data.detailedBiography} />
+              <Work work={data.work} />
+              <CarouselCustom gallery={data.work.project} />
+              <VideoCustom idVideo={idVideo} video={video} />
+              <GoogleMapCustom src={data.coordsSrc} place={data.place} />
             </Col>
           </Row>
         </Container>
       </main>
-
     );
   }
 }
 
-export default Architector;
+export default withTranslation()(Architector);

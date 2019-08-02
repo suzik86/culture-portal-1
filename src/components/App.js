@@ -13,9 +13,27 @@ import Footer from './Footer';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    this.selectContentHandler = this.selectContentHandler.bind(this);
+    this.selectPersonHandler = this.selectPersonHandler.bind(this);
+
     this.state = {
       targetArch: 0,
+      contentType: 'main',
     };
+  }
+
+  selectContentHandler(contentType) {
+    this.setState({
+      contentType,
+    });
+  }
+
+  selectPersonHandler(contentType, targetArch) {
+    this.setState({
+      targetArch,
+      contentType,
+    });
   }
 
   render() {
@@ -23,18 +41,40 @@ class App extends Component {
     const architects = t('architects', { returnObjects: true });
     const site = t('site', { returnObjects: true });
     const listLength = architects.length;
-    const { targetArch } = this.state;
+    const { targetArch, contentType } = this.state;
 
     const changeLanguage = (lng) => {
       i18n.changeLanguage(lng);
     };
 
+    let content;
+    switch (contentType) {
+      case 'list': {
+        content = (
+          <ArchitectsList selectPersonHandler={this.selectPersonHandler} />
+        );
+        break;
+      }
+      case 'person': {
+        content = (
+          <Architector data={architects[targetArch]} site={site} />
+        );
+        break;
+      }
+      default: {
+        content = (
+          <MainPage architects={architects} listLength={listLength} />
+        );
+      }
+    }
+
     return (
       <div>
-        <Header changeLanguageHandler={(lang) => changeLanguage(lang)} />
-        <MainPage architects={architects} listLength={listLength} />
-        <Architector data={architects[targetArch]} site={site} />
-        <ArchitectsList />
+        <Header 
+          changeLanguageHandler={(lang) => changeLanguage(lang)} 
+          selectContentHandler={this.selectContentHandler}
+        />
+        {content}
         <Footer />
       </div>
     );

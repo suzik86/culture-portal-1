@@ -6,7 +6,7 @@ const CarouselCustom = ({ gallery }) => {
   const imagesForCarousel = gallery.map(item => (
     <Carousel.Item key={uniqid()}>
       <img
-        className="d-block w-100"
+        className="d-block w-100 img-carousel"
         src={item}
         alt="First slide"
       />

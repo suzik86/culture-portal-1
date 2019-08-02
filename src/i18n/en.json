@@ -95,8 +95,8 @@
             "text": "After retirement, he became interested in painting, copied the works of Russian artists of the second half of the XIX century."
           },
           {
-            "date5": "23.01.1990",
-            "text5": "He Died in his apartment in Minsk."
+            "date": "23.01.1990",
+            "text": "He Died in his apartment in Minsk."
           }
         ],
         "work": {
@@ -106,9 +106,7 @@
             "National Academic Drama Theater. M. Gorky",
             "1954 - The building of the architectural and construction technical school.",
             "National Art Museum of the Republic of Belarus.",
-            "1966 - Main building, building of radiophysics and electronics of the Belarusian State University.",
-            "State cottages of the Administration of the Affairs of the Council of Ministers of Belarus in Belovezhskaya Pushcha.",
-            "Educational buildings of the Medical Institute."
+            "1966 - Main building, building of radiophysics and electronics of the Belarusian State University."
           ],
           "project": [
             "https://www.is.by/upload/iblock/4f2/timthumb.jpg",
@@ -119,7 +117,7 @@
       },
       {
         "photo": "http://csl.bas-net.by/photos/news/december2012/03-12-2012/voinov.jpg",
-        "name": "Voinov Alexandr",
+        "name": "Voinov, Alexandr",
         "descriptionShort": "Born in the city of Kolpino near St. Petersburg. In 1924 he entered the architectural department of the Moscow Higher Art and Technical Institute. After defending a thesis project, he was assigned to Minsk and immediately became the head of the only project office at Belzhilsoyuz. In 1931-1933 participated in the organization of the Minsk branch of Giprogor RSFSR, where he headed the design department and worked on the creation of the first Belarusian design institute in Belarus - Belgosproekt, whose director he was appointed and headed the architectural workshop. In 1934, A.P. Voinov was one of the initiators of the formation of the Union of Architects of the BSSR. In 1941-1949 He was chairman of the Union of Architects of the Belorussian SSR. Since 1943, A.P. Voinov - Head of the Office for Architecture under the SNK of the Byelorussian SSR, since 1945 - Head of the architectural workshop in Belgosproekt. Since 1948 - Head of the Department of Architecture, since 1973 - Professor and Consultant of the Belarusian Polytechnic Institute. In addition to administrative and public work, Alexander Petrovich Voinov took part in architectural competitions, he was repeatedly awarded prizes, according to his projects in the 1930s buildings were built that enriched the architectural appearance of Belarusian cities. The list of the main creative works of A. Voinov consists of 23 competitive and 70 projects of large architectural structures.",
         "years": "Years of life:",
         "life": "December 3, 1902 - October 1, 1987",
@@ -129,28 +127,28 @@
         "biography": "Biography",
         "detailedBiography": [
           {
-            "date0": "03.12.1902",
-            "text 0": "He was born in Kolpino, St. Petersburg province."
+            "date": "03.12.1902",
+            "text": "He was born in Kolpino, St. Petersburg province."
           },
           {
-            "date1": "1929",
-            "text1": "He graduated from the Moscow higher art and technical Institute."
+            "date": "1929",
+            "text": "He graduated from the Moscow higher art and technical Institute."
           },
           {
-            "date 2": "1930-1941",
-            "text2": "He worked in Minsk: architect Belgolaise, Director of Belgosproekt, Director of the architectural Studio."
+            "date": "1930-1941",
+            "text": "He worked in Minsk: architect Belgolaise, Director of Belgosproekt, Director of the architectural Studio."
           },
           {
-            "date 3": "1941-1949",
-            "text3": "He worked as Chairman of the Union of architects of BSSR."
+            "date": "1941-1949",
+            "text": "He worked as Chairman of the Union of architects of BSSR."
           },
           {
-            "date4": "1973",
-            "text4": "Professor-consultant of the Belarusian Polytechnic Institute."
+            "date": "1973",
+            "text": "Professor-consultant of the Belarusian Polytechnic Institute."
           },
           {
-            "date 5": "01.10.1987",
-            "text 5": "He died at the age of 84."
+            "date": "01.10.1987",
+            "text": "He died at the age of 84."
           }
         ],
         "work": {
@@ -183,32 +181,32 @@
         "biography": "Biography",
         "detailedBiography": [
           {
-            "date0": "1966-1972",
-            "text0": "He studied at the Department of architecture of the Belarusian Polytechnic Institute."
+            "date": "1966-1972",
+            "text": "He studied at the Department of architecture of the Belarusian Polytechnic Institute."
           },
           {
-            "date1": "1972-1976, 1982-1998",
-            "text1": "He worked as an architect, senior architect, chief architect of projects, head of the workshop in Belgosproekt."
+            "date": "1972-1976, 1982-1998",
+            "text": "He worked as an architect, senior architect, chief architect of projects, head of the workshop in Belgosproekt."
           },
           {
-            "date2": "1976-1982",
-            "text2": "He worked in Belniipgradostroitelstvo. Head of the group of architects, chief architect of projects, head of the workshop."
+            "date": "1976-1982",
+            "text": "He worked in Belniipgradostroitelstvo. Head of the group of architects, chief architect of projects, head of the workshop."
           },
           {
-            "date3": "1982",
-            "text3": "Winner of the Lenin Komsomol of Belarus in the field of architecture for the project of the Palace of youth in Novopolotsk."
+            "date": "1982",
+            "text": "Winner of the Lenin Komsomol of Belarus in the field of architecture for the project of the Palace of youth in Novopolotsk."
           },
           {
-            "date4": "1998-...",
-            "text4": "Own creative workshop."
+            "date": "1998-...",
+            "text": "Own creative workshop."
           },
           {
-            "date5": "2003-...",
-            "text5": "He teaches design at the architectural faculty of the Belarusian National Technical University."
+            "date": "2003-...",
+            "text": "He teaches design at the architectural faculty of the Belarusian National Technical University."
           },
           {
-            "date6": "2005-...",
-            "text6": "He is a member of the Board of the Belarusian Union of Architects."
+            "date": "2005-...",
+            "text": "He is a member of the Board of the Belarusian Union of Architects."
           }
         ],
         "work": {
@@ -241,36 +239,36 @@
         "biography": "Biography",
         "detailedBiography": [
           {
-            "date0": "25.07.1936",
-            "text0": "Born on July 25, 1936 in Minsk"
+            "date": "25.07.1936",
+            "text": "Born on July 25, 1936 in Minsk"
           },
           {
-            "date1": "1954-1960",
-            "text1": "Study at the Belarusian Polytechnic Institute."
+            "date": "1954-1960",
+            "text": "Study at the Belarusian Polytechnic Institute."
           },
           {
-            "date2": "1960",
-            "text2": "Since 1960 — work at the Institute Minskproekt (from the architect to the head of the Workshop on building the center of Minsk)."
+            "date": "1960",
+            "text": "Since 1960 — work at the Institute Minskproekt (from the architect to the head of the Workshop on building the center of Minsk)."
           },
           {
-            "date3": "1960-1967",
-            "text3": "Participated in the creation of the Park. 50 years of Soviet power."
+            "date": "1960-1967",
+            "text": "Participated in the creation of the Park. 50 years of Soviet power."
           },
           {
-            "date4": "1968",
-            "text4": "participated in the creation of the exhibition pavilion VDNH BSSR in Minsk."
+            "date": "1968",
+            "text": "participated in the creation of the exhibition pavilion VDNH BSSR in Minsk."
           },
           {
-            "date5": "1970",
-            "text5": "As part of the team of authors he was awarded the Lenin prize for the memorial complex of 1968-1969 Khatyn."
+            "date": "1970",
+            "text": "As part of the team of authors he was awarded the Lenin prize for the memorial complex of 1968-1969 Khatyn."
           },
           {
-            "date6": "1997",
-            "text6": "Since 1997, the Director of her own creative workshop of unitary enterprise Creative workshop of the architect L. Levin."
+            "date": "1997",
+            "text": "Since 1997, the Director of her own creative workshop of unitary enterprise Creative workshop of the architect L. Levin."
           },
           {
-            "date7": "01.03.2014",
-            "text7": "Died March 1, 2014 in Minsk. He was buried on March 4, 2014 in the Central alley of the Eastern cemetery in Minsk."
+            "date": "01.03.2014",
+            "text": "Died March 1, 2014 in Minsk. He was buried on March 4, 2014 in the Central alley of the Eastern cemetery in Minsk."
           }
         ],
         "work": {
@@ -304,44 +302,44 @@
         "biography": "Biography",
         "detailedBiography": [
           {
-            "date0": "06(18).01.1882",
-            "text0": "Born in the town of Belsk, Grodno province of the Russian Empire, in a Jewish family. His father saw a future for his son in Commerce, but Joseph loved to draw since childhood."
+            "date": "06(18).01.1882",
+            "text": "Born in the town of Belsk, Grodno province of the Russian Empire, in a Jewish family. His father saw a future for his son in Commerce, but Joseph loved to draw since childhood."
           },
           {
-            "date1": "1901-1906",
-            "text1": "having Brilliantly graduated from the local gymnasium in 1901, he entered the architectural Department of the Odessa art school, from which he graduated in 1906."
+            "date": "1901-1906",
+            "text": "having Brilliantly graduated from the local gymnasium in 1901, he entered the architectural Department of the Odessa art school, from which he graduated in 1906."
           },
           {
-            "date2": "1907-1914",
-            "text2": "In 1907 he moved to St. Petersburg, where he successfully passed the exams to the Higher art school at the Imperial Academy of arts at the faculty of architecture. He studied for seven years in St. Petersburg (1907-1914). Among the teachers of Langbard was the famous Russian architect Alexander Pomerantsev, who designed the Gum building in Moscow. It was under his leadership that Langbard defended the diploma project the Building of the State Council of the Russian Empirein 1914."
+            "date": "1907-1914",
+            "text": "In 1907 he moved to St. Petersburg, where he successfully passed the exams to the Higher art school at the Imperial Academy of arts at the faculty of architecture. He studied for seven years in St. Petersburg (1907-1914). Among the teachers of Langbard was the famous Russian architect Alexander Pomerantsev, who designed the Gum building in Moscow. It was under his leadership that Langbard defended the diploma project the Building of the State Council of the Russian Empirein 1914."
           },
           {
-            "date3": "1914-1918",
-            "text3": "During the First world war, Langbard worked at the front as chief of the engineering detachment. Under his leadership at that time the Zemstvo Council in Kostroma, the agricultural Museum and the theater of miniatures in Petrograd were built. At the end of the war he was the executor of the construction office at the Department of health in Petrograd."
+            "date": "1914-1918",
+            "text": "During the First world war, Langbard worked at the front as chief of the engineering detachment. Under his leadership at that time the Zemstvo Council in Kostroma, the agricultural Museum and the theater of miniatures in Petrograd were built. At the end of the war he was the executor of the construction office at the Department of health in Petrograd."
           },
           {
-            "date4": "1918-1929",
-            "text4": "In 1923 the architectural project of Langbard, among forty seven works by other authors, participated in the competition of projects of the Palace of labor in Moscow — the main public building of the USSR. In 1929 he won the all-Union competition for the best project of the House of government of the Belarusian SSR. Langbard performed projects of the buildings of the Institute of mineral resources in Moscow, mechanical, Laundry, dispensary and factory kitchens, as well as the Botkin hospital for infectious diseases in Leningrad."
+            "date": "1918-1929",
+            "text": "In 1923 the architectural project of Langbard, among forty seven works by other authors, participated in the competition of projects of the Palace of labor in Moscow — the main public building of the USSR. In 1929 he won the all-Union competition for the best project of the House of government of the Belarusian SSR. Langbard performed projects of the buildings of the Institute of mineral resources in Moscow, mechanical, Laundry, dispensary and factory kitchens, as well as the Botkin hospital for infectious diseases in Leningrad."
           },
           {
-            "date5": "1930-1935",
-            "text5": "In the early 1930s, Langbard received the first large construction orders in Belarus and Ukraine. The first project implemented by Langbard upon his arrival in Minsk was the construction of about forty wooden pavilions for the all-Belarusian agricultural and industrial exhibition. After that, he was invited to design the construction of the Central part of the city. Langbard proposed models of three buildings: the House of the government of the Belarusian SSR, the State Opera and ballet theatre of the Belarusian SSR and the House of the red army (modern House of officers). The project of the House of government was prepared and approved in 1929, and from 1930 to 1934 it was implemented. In front of this building was a monument to Lenin, designed by Langbard together with the Leningrad sculptor M. G. Manizer. For this ensemble Joseph Langbard was awarded the honorary title Honored artist of the Belarusian SSR."
+            "date": "1930-1935",
+            "text": "In the early 1930s, Langbard received the first large construction orders in Belarus and Ukraine. The first project implemented by Langbard upon his arrival in Minsk was the construction of about forty wooden pavilions for the all-Belarusian agricultural and industrial exhibition. After that, he was invited to design the construction of the Central part of the city. Langbard proposed models of three buildings: the House of the government of the Belarusian SSR, the State Opera and ballet theatre of the Belarusian SSR and the House of the red army (modern House of officers). The project of the House of government was prepared and approved in 1929, and from 1930 to 1934 it was implemented. In front of this building was a monument to Lenin, designed by Langbard together with the Leningrad sculptor M. G. Manizer. For this ensemble Joseph Langbard was awarded the honorary title Honored artist of the Belarusian SSR."
           },
           {
-            "date6": "1935-1939",
-            "text6": "In 1935, Langbard was instructed to develop a draft of the House of Soviets in Mogilev, where it was soon planned to move the capital of the BSSR. The building was erected in 1938-1940. In 1935, Langbard undertook to redesign the building of the Academy of Sciences of the Belarusian SSR, developed by G. Lavrov. In 1937, the work of the architect received worldwide recognition, the year Joseph Langbard won the Grand Prix of the world exhibition in Paris."
+            "date": "1935-1939",
+            "text": "In 1935, Langbard was instructed to develop a draft of the House of Soviets in Mogilev, where it was soon planned to move the capital of the BSSR. The building was erected in 1938-1940. In 1935, Langbard undertook to redesign the building of the Academy of Sciences of the Belarusian SSR, developed by G. Lavrov. In 1937, the work of the architect received worldwide recognition, the year Joseph Langbard won the Grand Prix of the world exhibition in Paris."
           },
           {
-            "date7": "1939-1944",
-            "text7": "During the Second world war, Langbard worked on masking buildings in Leningrad, after the evacuation to the rear lived in the Yaroslavl region. In 1944, he returned to Minsk, destroyed by the Nazis, where he worked on plans for the reconstruction of Minsk and Gomel as part of the Commission of the Committee on architecture under the SNK of the USSR. In 1949 for this work he was awarded the Soviet order Badge of Honor. Together with Mikhail Baklanov, he developed the project of The Pobeda cinema building in Minsk, completed in 1950."
+            "date": "1939-1944",
+            "text": "During the Second world war, Langbard worked on masking buildings in Leningrad, after the evacuation to the rear lived in the Yaroslavl region. In 1944, he returned to Minsk, destroyed by the Nazis, where he worked on plans for the reconstruction of Minsk and Gomel as part of the Commission of the Committee on architecture under the SNK of the USSR. In 1949 for this work he was awarded the Soviet order Badge of Honor. Together with Mikhail Baklanov, he developed the project of The Pobeda cinema building in Minsk, completed in 1950."
           },
           {
-            "date8": "1944-1951",
-            "text8": "From 1935 to 1950 Joseph Langbard taught at the Leningrad Institute of painting, sculpture and architecture (Repin Institute of arts in), now the Institute named after Repin in St. Petersburg."
+            "date": "1944-1951",
+            "text": "From 1935 to 1950 Joseph Langbard taught at the Leningrad Institute of painting, sculpture and architecture (Repin Institute of arts in), now the Institute named after Repin in St. Petersburg."
           },
           {
-            "date9": "03.01.1951",
-            "text9": "Died in Leningrad."
+            "date": "03.01.1951",
+            "text": "Died in Leningrad."
           }
         ],
         "work": {
@@ -378,28 +376,28 @@
         "biography": "Biography",
         "detailedBiography": [
           {
-            "date0": "1913 - 1918",
-            "text0": "He studied at the Moscow school of painting, sculpture and architecture."
+            "date": "1913 - 1918",
+            "text": "He studied at the Moscow school of painting, sculpture and architecture."
           },
           {
-            "date1": "1924 - 1941",
-            "text1": "He worked in architectural and design organizations of Moscow and taught at the same time."
+            "date": "1924 - 1941",
+            "text": "He worked in architectural and design organizations of Moscow and taught at the same time."
           },
           {
-            "date2": "1941-1944",
-            "text2": "Worked as a senior researcher at the Academy of architecture of the USSR."
+            "date": "1941-1944",
+            "text": "Worked as a senior researcher at the Academy of architecture of the USSR."
           },
           {
-            "date3": "1944-1948",
-            "text3": "Worked as the head of architectural and design workshops of the Committee for architecture of the USSR. Developed projects of residential and public buildings for many cities of the USSR, the basic principles and methods of planning and development of rural settlements of a new type."
+            "date": "1944-1948",
+            "text": "Worked as the head of architectural and design workshops of the Committee for architecture of the USSR. Developed projects of residential and public buildings for many cities of the USSR, the basic principles and methods of planning and development of rural settlements of a new type."
           },
           {
-            "date4": "1953",
-            "text4": "Publication of a number of works on the topic: On the principles of integrated serial design of residential buildings."
+            "date": "1953",
+            "text": "Publication of a number of works on the topic: On the principles of integrated serial design of residential buildings."
           },
           {
-            "date5": "02.02.1968",
-            "text5": "He was buried in Moscow at Novodevichy cemetery."
+            "date": "02.02.1968",
+            "text": "He was buried in Moscow at Novodevichy cemetery."
           }
         ],
         "work": {
@@ -431,32 +429,32 @@
         "biography": "Biography",
         "detailedBiography": [
           {
-            "date0": "1961",
-            "text0": "He graduated from the architectural faculty of the Novosibirsk Institute of civil engineering."
+            "date": "1961",
+            "text": "He graduated from the architectural faculty of the Novosibirsk Institute of civil engineering."
           },
           {
-            "date1": "1967",
-            "text1": "He moved to Minsk.."
+            "date": "1967",
+            "text": "He moved to Minsk.."
           },
           {
-            "date2": "1967-1974",
-            "text2": "He worked at the Institute Minskproekt, team leader, chief architect of projects."
+            "date": "1967-1974",
+            "text": "He worked at the Institute Minskproekt, team leader, chief architect of projects."
           },
           {
-            "date3": "1974",
-            "text3": "Chief architect of the construction Department in the Institute Belcommunproject."
+            "date": "1974",
+            "text": "Chief architect of the construction Department in the Institute Belcommunproject."
           },
           {
-            "date4": "1976",
-            "text4": "He worked as the head of architectural and design workshops at the Institute Belgosproekt."
+            "date": "1976",
+            "text": "He worked as the head of architectural and design workshops at the Institute Belgosproekt."
           },
           {
-            "date5": "1993 - 1999",
-            "text5": "He worked as chief architect of the Institute Minskgrazhdanproekt."
+            "date": "1993 - 1999",
+            "text": "He worked as chief architect of the Institute Minskgrazhdanproekt."
           },
           {
-            "date5": "1999 - ...",
-            "text5": "Currently teaches at the Belarusian national technical University."
+            "date": "1999 - ...",
+            "text": "Currently teaches at the Belarusian national technical University."
           }
         ],
         "work": {
@@ -512,7 +510,7 @@
       "aboutPortalArticle": "The Belarusian Union of Architects is over 80 years old. Its history is part of the history of the country and the people, its creative activity. A long and difficult path has been passed - the path of search and embodiment, mistakes and achievements. And today's Belarus reveals to the world its beautiful renewed face thanks to the talent and skill, professional skill of architects, whose tireless work has grown over the years the treasury of Belarusian architecture. Our team has created a portal about architects of Belarus.",
       "persons": "All architects",
       "mainPerson": "Architect of the day",
-      "inputPlaceholder": "Введите фамилию архитектора или место его рождения",
+      "inputPlaceholder": "Enter architect's name or his birthplace",
       "video": "Video",
       "idVideo": "XQlJAiUZOrM"
     }

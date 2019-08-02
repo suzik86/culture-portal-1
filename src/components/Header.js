@@ -2,31 +2,55 @@ import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { withTranslation } from 'react-i18next';
+
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      flag: 'russia flag',
+      language: 'Russian',
+    };
+    this.changeLanguage = this.changeLanguage.bind(this);
+  }
+
+  changeLanguage(flag, lang, key) {
+    const { changeLanguageHandler } = this.props;
+    changeLanguageHandler(key);
+    this.setState(() => ({
+      flag: `${flag} flag`,
+      language: lang,
+    }));
+  }
+
   render() {
+    const { flag, language } = this.state;
+    const { t, selectContentHandler } = this.props;
+    const site = t('site', { returnObjects: true });
+
     return (
       <Navbar className="header" expand="lg">
-        <Navbar.Brand className="logo" href="#home">
-          <span>Архитекторы</span>
-          <span> Беларуси</span>
+        <Navbar.Brand className="logo" href="#home" onClick={() => selectContentHandler('main')}>
+          <span>{t('site.title')}</span>
+          <span>{t('site.title1')}</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto menu">
-            <Nav.Link href="#list">Все архитекторы</Nav.Link>
+            <Nav.Link href="#list" onClick={() => selectContentHandler('list')}>{site.persons}</Nav.Link>
           </Nav>
-          <i className="russia flag" />
-          <NavDropdown title="Russian" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#rus" onClick={this.handleClick}>
+          <i className={flag} />
+          <NavDropdown title={language} id="basic-nav-dropdown">
+            <NavDropdown.Item href="#rus" onClick={() => this.changeLanguage('russia', 'Russian', 'ru')}>
               <i className="russia flag" />
               Russian
             </NavDropdown.Item>
-            <NavDropdown.Item href="#us">
+            <NavDropdown.Item href="#us" onClick={() => this.changeLanguage('united states', 'English', 'en')}>
               <i className="united states flag" />
               English
             </NavDropdown.Item>
-            <NavDropdown.Item href="#by">
+            <NavDropdown.Item href="#by" onClick={() => this.changeLanguage('belarus', 'Belarusian', 'by')}>
               <i className="belarus flag" />
               Belarusian
             </NavDropdown.Item>
@@ -37,4 +61,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withTranslation()(Header);

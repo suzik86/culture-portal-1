@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
 class ArchitectOfTheDay extends Component {
@@ -13,21 +10,18 @@ class ArchitectOfTheDay extends Component {
   }
 
   render() {
-    const { architect } = this.props;
+    const {
+      architect, site, index, selectPersonHandler,
+    } = this.props;
 
     return (
-      <section>
-        <Container>
-          <Row>
-            <Col>
-              <Image src={architect.photo} alt={architect.name} width="250" rounded />
-              <h3>{architect.name}</h3>
-              <p>
-                {ArchitectOfTheDay.cutDescription(architect.descriptionShort, 300)}
-              </p>
-            </Col>
-          </Row>
-        </Container>
+      <section className="architect-of-the-day">
+        <h2>{site.mainPerson}</h2>
+        <a href="#architect" onClick={() => selectPersonHandler('person', index)}><h4>{architect.name}</h4></a>
+        <Image className="architect-photo" src={architect.photo} alt={architect.name} width="250" align="left" rounded />
+        <p>
+          {ArchitectOfTheDay.cutDescription(architect.descriptionShort, 800)}
+        </p>
       </section>
     );
   }

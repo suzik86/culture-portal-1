@@ -511,6 +511,7 @@
       "persons": "All architects",
       "mainPerson": "Architect of the day",
       "inputPlaceholder": "Enter architect's name or his birthplace",
+      "notFound": "Nothing found",
       "video": "Video",
       "idVideo": "XQlJAiUZOrM"
     }

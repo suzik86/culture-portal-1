@@ -5,7 +5,7 @@ import { withTranslation } from 'react-i18next';
 
 import ArchitectShortArticle from './ArchitectShortArticle';
 import SearchWidget from './SearchWidget';
-// import NotFoundMessage from './NotFoundMessage';
+import NotFound from './NotFound';
 
 class ArchitectsList extends Component {
   static isArchitectMatches(architect, searchString) {
@@ -33,7 +33,7 @@ class ArchitectsList extends Component {
     });
   }
 
-  filteredArchitects(architects, selectPersonHandler) {
+  filteredArchitects(architects, notFound, selectPersonHandler) {
     const { searchString } = this.state;
     const searchResults = [];
     architects
@@ -49,22 +49,24 @@ class ArchitectsList extends Component {
           );
         }
       });
-    return searchResults.length > 0 ? searchResults : 'НІЧОГА НЯМА';
+    return searchResults.length > 0 ? searchResults : <NotFound notFound={notFound} />;
   }
 
   render() {
     const { t, selectPersonHandler } = this.props;
-
-    const inputPlaceholder = t('site.inputPlaceholder');
+    const site = t('site', { returnObjects: true });
     const architects = t('architects', { returnObjects: true });
 
+    const { notFound, inputPlaceholder } = site;
 
-    const architectsToRender = this.filteredArchitects(architects, selectPersonHandler);
+    const architectsToRender = this.filteredArchitects(architects, notFound, selectPersonHandler);
     return (
-      <Container>
-        <SearchWidget placeholder={inputPlaceholder} onChange={this.inputToState} />
-        {architectsToRender}
-      </Container>
+      <main className="main">
+        <Container>
+          <SearchWidget placeholder={inputPlaceholder} onChange={this.inputToState} />
+          {architectsToRender}
+        </Container>
+      </main>
     );
   }
 }

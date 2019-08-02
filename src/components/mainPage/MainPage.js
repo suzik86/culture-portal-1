@@ -23,14 +23,14 @@ class MainPage extends Component {
     const architects = t('architects', { returnObjects: true });
     const architectOfTheDay = architects[this.todayIndex()];
     return (
-      <main>
+      <main className="main">
         <Container>
           <Row>
             <Col>
               <AboutThePortal site={site} />
             </Col>
             <Col>
-              <ArchitectOfTheDay architect={architectOfTheDay} />
+              <ArchitectOfTheDay site={site} architect={architectOfTheDay} />
             </Col>
           </Row>
           <Row>

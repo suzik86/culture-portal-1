@@ -12,8 +12,8 @@ class OurTeam extends Component {
     const developers = t('crew.developer', { returnObjects: true });
 
     return (
-      <section>
-        <h3>{ team }</h3>
+      <section className="developers-team">
+        <h2>{ team }</h2>
         <Row>
           {developers.map(item => (
             <Developer

@@ -21,6 +21,7 @@ class App extends Component {
   render() {
     const { t, i18n } = this.props;
     const architects = t('architects', { returnObjects: true });
+    const site = t('site', { returnObjects: true });
     const listLength = architects.length;
     const { targetArch } = this.state;
 
@@ -32,7 +33,7 @@ class App extends Component {
       <div>
         <Header changeLanguageHandler={(lang) => changeLanguage(lang)} />
         <MainPage architects={architects} listLength={listLength} />
-        <Architector data={architects[targetArch]} />
+        <Architector data={architects[targetArch]} site={site} />
         <ArchitectsList />
         <Footer />
       </div>

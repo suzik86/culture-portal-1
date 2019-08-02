@@ -3,12 +3,13 @@ import ModalVideo from 'react-modal-video';
 import Button from 'react-bootstrap/Button';
 
 class VideoCustom extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       isOpen: false,
     };
     this.openModal = this.openModal.bind(this);
+    this.idVideo = props.idVideo;
   }
 
   openModal() {
@@ -19,7 +20,7 @@ class VideoCustom extends Component {
     const { isOpen } = this.state;
     return (
       <div>
-        <ModalVideo channel="youtube" isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => this.setState({ isOpen: false })} />
+        <ModalVideo channel="youtube" isOpen={isOpen} videoId={this.idVideo} onClose={() => this.setState({ isOpen: false })} />
         <Button variant="primary" size="lg" block onClick={this.openModal}>Video</Button>
       </div>
     );

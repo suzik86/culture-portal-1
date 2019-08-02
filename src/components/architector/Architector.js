@@ -18,6 +18,7 @@ class Architector extends Component {
   constructor(props) {
     super(props);
     this.data = props.data;
+    this.idVideo = props.site.idVideo;
     this.coords = {
       lat: -36.122,
       lng: 150.644,
@@ -45,7 +46,7 @@ class Architector extends Component {
             <TimeLineCustom detailedBiography={this.data.detailedBiography} />
             <Work work={this.data.work} />
             <CarouselCustom gallery={this.data.work.project} />
-            <VideoCustom />
+            <VideoCustom idVideo={this.idVideo} />
             <GoogleMapCustom
               coords={this.coords}
               googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"

@@ -37,17 +37,15 @@ class ArchitectsList extends Component {
     const { searchString } = this.state;
     const searchResults = [];
     architects
-      .map((item, i) => {
+      .forEach((item, i) => {
         if (ArchitectsList.isArchitectMatches(item, searchString)) {
-          return (
-            searchResults.push(
-              <ArchitectShortArticle
-                key={uniqid()}
-                architect={item}
-                index={i}
-                selectPersonHandler={selectPersonHandler}
-              />,
-            )
+          searchResults.push(
+            <ArchitectShortArticle
+              key={uniqid()}
+              architect={item}
+              index={i}
+              selectPersonHandler={selectPersonHandler}
+            />,
           );
         }
       });

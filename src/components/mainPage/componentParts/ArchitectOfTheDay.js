@@ -10,14 +10,15 @@ class ArchitectOfTheDay extends Component {
   }
 
   render() {
-    const { architect } = this.props;
+    const { architect, site } = this.props;
 
     return (
-      <section>
-        <Image src={architect.photo} alt={architect.name} width="250" rounded />
-        <h3>{architect.name}</h3>
+      <section className="architect-of-the-day">
+        <h2>{site.mainPerson}</h2>
+        <a href="#architect"><h4>{architect.name}</h4></a>
+        <Image className="architect-photo" src={architect.photo} alt={architect.name} width="250" align="left" rounded />
         <p>
-          {ArchitectOfTheDay.cutDescription(architect.descriptionShort, 300)}
+          {ArchitectOfTheDay.cutDescription(architect.descriptionShort, 800)}
         </p>
       </section>
     );

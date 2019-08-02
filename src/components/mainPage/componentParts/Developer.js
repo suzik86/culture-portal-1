@@ -4,14 +4,13 @@ import Image from 'react-bootstrap/Image';
 
 class Developer extends Component {
   render() {
-    const { data } = this.props;
-    const { developer } = data.crew;
-    const dev = developer[0];
+    const { name, photo, contribution } = this.props;
+
     return (
       <Col>
-        <Image src="template/images/36624664.jpg" width="150" rounded />
-        <p>{dev.name}</p>
-        <p>{dev.contribution}</p>
+        <Image className="developer-photo" src={photo} alt={name} width="150" rounded />
+        <p className="developer-name">{name}</p>
+        <p>{contribution}</p>
       </Col>
     );
   }

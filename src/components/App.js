@@ -1,37 +1,43 @@
 import React, { Component } from 'react';
-
-import Architector from './architector/Architector';
-// import MainPage from './mainPage/MainPage';
-import Header from './Header';
-import Footer from './Footer';
+import { withTranslation } from 'react-i18next';
+import '../../node_modules/react-modal-video/css/modal-video.min.css';
 
 import '../styles/App.css';
-import '../../node_modules/react-modal-video/css/modal-video.min.css';
-import Ru from '../json/ru';
+
+import Architector from './architector/Architector';
+import MainPage from './mainPage/MainPage';
+import ArchitectsList from './architectsList/ArchitectsList';
+import Header from './Header';
+import Footer from './Footer';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: Ru,
-      team: 'Наша команда',
       targetArch: 0,
-      // isLoading: true,
     };
   }
 
   render() {
-    const { data, team, targetArch } = this.state;
-    // const listLength = data.author.length;
+    const { t, i18n } = this.props;
+    const architects = t('architects', { returnObjects: true });
+    const listLength = architects.length;
+    const { targetArch } = this.state;
+
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+    };
+
     return (
       <div>
-        <Header />
-        {/* <MainPage team={team} data={data} /> */}
-        <Architector data={data.author[targetArch]} />
+        <Header changeLanguageHandler={(lang) => changeLanguage(lang)} />
+        <MainPage architects={architects} listLength={listLength} />
+        <Architector data={architects[targetArch]} />
+        <ArchitectsList />
         <Footer />
       </div>
     );
   }
 }
 
-export default App;
+export default withTranslation()(App);

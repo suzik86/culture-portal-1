@@ -30,10 +30,7 @@ class App extends Component {
 
     return (
       <div>
-        <button type="button" onClick={() => changeLanguage('en')}>en</button>
-        <button type="button" onClick={() => changeLanguage('ru')}>ru</button>
-        <button type="button" onClick={() => changeLanguage('by')}>by</button>
-        <Header />
+        <Header changeLanguageHandler={(lang) => changeLanguage(lang)} />
         <MainPage architects={architects} listLength={listLength} />
         <Architector data={architects[targetArch]} />
         <ArchitectsList />

@@ -15,7 +15,8 @@ class Header extends Component {
     this.changeLanguage = this.changeLanguage.bind(this);
   }
 
-  changeLanguage(flag, lang) {
+  changeLanguage(flag, lang, key) {
+    this.props.changeLanguageHandler(key);
     this.setState(() => ({
       flag: `${flag} flag`,
       language: lang,
@@ -40,15 +41,15 @@ class Header extends Component {
           </Nav>
           <i className={flag} />
           <NavDropdown title={language} id="basic-nav-dropdown">
-            <NavDropdown.Item href="#rus" onClick={() => this.changeLanguage('russia', 'Russian')}>
+            <NavDropdown.Item href="#rus" onClick={() => this.changeLanguage('russia', 'Russian', 'ru')}>
               <i className="russia flag" />
               Russian
             </NavDropdown.Item>
-            <NavDropdown.Item href="#us" onClick={() => this.changeLanguage('united states', 'English')}>
+            <NavDropdown.Item href="#us" onClick={() => this.changeLanguage('united states', 'English', 'en')}>
               <i className="united states flag" />
               English
             </NavDropdown.Item>
-            <NavDropdown.Item href="#by" onClick={() => this.changeLanguage('belarus', 'Belarusian')}>
+            <NavDropdown.Item href="#by" onClick={() => this.changeLanguage('belarus', 'Belarusian', 'by')}>
               <i className="belarus flag" />
               Belarusian
             </NavDropdown.Item>

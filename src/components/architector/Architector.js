@@ -36,22 +36,25 @@ class Architector extends Component {
     };
 
     return (
-      <Container className="container">
-        <Row className="architect-description row">
-          <Col className="col-md text-center">
-            <Photo url={this.data.photo} />
-            <Name name={this.data.name} />
-            <YearsLife date={this.data.life} />
-            <Location location={location} />
-            <Biography biography={biography} />
-            <TimeLineCustom detailedBiography={this.data.detailedBiography} />
-            <Work work={this.data.work} />
-            <CarouselCustom gallery={this.data.work.project} />
-            <VideoCustom idVideo={this.idVideo} />
-            <GoogleMapCustom src={this.data.coordsSrc} place={this.data.place} />
-          </Col>
-        </Row>
-      </Container>
+      <main className="main">
+        <Container className="container">
+          <Row className="architect-description row">
+            <Col className="col-md text-center">
+              <Photo url={this.data.photo} />
+              <Name name={this.data.name} />
+              <YearsLife life={this.data.life} />
+              <Location location={location} />
+              <Biography biography={biography} />
+              <TimeLineCustom detailedBiography={this.data.detailedBiography} />
+              <Work work={this.data.work} />
+              <CarouselCustom gallery={this.data.work.project} />
+              <VideoCustom idVideo={this.idVideo} />
+              <GoogleMapCustom src={this.data.coordsSrc} place={this.data.place} />
+            </Col>
+          </Row>
+        </Container>
+      </main>
+
     );
   }
 }

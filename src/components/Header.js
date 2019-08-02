@@ -16,7 +16,8 @@ class Header extends Component {
   }
 
   changeLanguage(flag, lang, key) {
-    this.props.changeLanguageHandler(key);
+    const { changeLanguageHandler } = this.props;
+    changeLanguageHandler(key);
     this.setState(() => ({
       flag: `${flag} flag`,
       language: lang,

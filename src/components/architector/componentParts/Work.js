@@ -12,7 +12,7 @@ const Work = ({ work }) => {
 
   return (
     <div className="table">
-      <h3>{work.workTitle}</h3>
+      <h4>{work.workTitle}</h4>
       <Table striped bordered hover>
         <thead>
           <tr>

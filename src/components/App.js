@@ -63,15 +63,19 @@ class App extends Component {
       }
       default: {
         content = (
-          <MainPage architects={architects} listLength={listLength} />
+          <MainPage
+            architects={architects}
+            listLength={listLength}
+            selectPersonHandler={this.selectPersonHandler}
+          />
         );
       }
     }
 
     return (
       <div>
-        <Header 
-          changeLanguageHandler={(lang) => changeLanguage(lang)} 
+        <Header
+          changeLanguageHandler={lang => changeLanguage(lang)}
           selectContentHandler={this.selectContentHandler}
         />
         {content}

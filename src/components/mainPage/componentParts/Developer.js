@@ -8,8 +8,8 @@ class Developer extends Component {
 
     return (
       <Col>
-        <Image src={photo} alt={name} width="150" rounded />
-        <p>{name}</p>
+        <Image className="developer-photo" src={photo} alt={name} width="150" rounded />
+        <p className="developer-name">{name}</p>
         <p>{contribution}</p>
       </Col>
     );

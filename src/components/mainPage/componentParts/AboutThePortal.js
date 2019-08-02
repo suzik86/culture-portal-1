@@ -6,8 +6,8 @@ class AboutThePortal extends Component {
     const title = site.aboutPortal;
     const description = site.aboutPortalArticle;
     return (
-      <section>
-        <h3>{title}</h3>
+      <section className="about">
+        <h2>{title}</h2>
         <p>{description}</p>
       </section>
     );

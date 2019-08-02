@@ -13,15 +13,16 @@ class MainPage extends Component {
   todayIndex() {
     const { listLength } = this.props;
     const dateOfYear = Math.round((Date.now()
-    - Date.parse(new Date().getFullYear(), 0, 0)) / 86400000);
+      - Date.parse(new Date().getFullYear(), 0, 0)) / 86400000);
     return dateOfYear > listLength ? dateOfYear % listLength : dateOfYear;
   }
 
   render() {
-    const { t } = this.props;
+    const { t, selectPersonHandler } = this.props;
     const site = t('site', { returnObjects: true });
     const architects = t('architects', { returnObjects: true });
-    const architectOfTheDay = architects[this.todayIndex()];
+    const index = this.todayIndex();
+    const architectOfTheDay = architects[index];
     return (
       <main className="main">
         <Container>
@@ -30,7 +31,12 @@ class MainPage extends Component {
               <AboutThePortal site={site} />
             </Col>
             <Col>
-              <ArchitectOfTheDay site={site} architect={architectOfTheDay} />
+              <ArchitectOfTheDay
+                site={site}
+                index={index}
+                architect={architectOfTheDay}
+                selectPersonHandler={selectPersonHandler}
+              />
             </Col>
           </Row>
           <Row>

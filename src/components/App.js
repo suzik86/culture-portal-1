@@ -13,10 +13,11 @@ import MainPage from './mainPage/MainPage';
 import ArchitectsList from './architectsList/ArchitectsList';
 import Header from './Header';
 import Footer from './Footer';
+import config from '../config';
 
 const client = createClient({
-  space: '6xi1ban3eonx',
-  accessToken: '5PCNrHtiMF2-N9s9MKg-S7G4UoyDGIZE-gODtjSdECU',
+  space: config.SPASE,
+  accessToken: config.ACCESS_TOKEN,
 });
 
 class App extends Component {
@@ -34,7 +35,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    client.getEntry('EFoacOPsP62cLFTzIr9uG').then((response) => {
+    client.getEntry(config.ENTRY).then((response) => {
       const { en, ru, by } = response.fields;
       i18nInit(en, ru, by);
       this.setState({

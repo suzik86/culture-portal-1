@@ -60,7 +60,8 @@
             "https://upload.wikimedia.org/wikipedia/commons/8/8d/Martynas_Ma%C5%BEvydas_National_Library_of_Lithuania.jpg",
             "http://cbg.org.by/sites/default/files/styles/slide/public/2018-05/slide-1612586702.jpg?itok=uj91gagD",
             "http://vandrouka.by/wp-content/uploads/2012/12/4.jpg"
-          ]
+          ],
+          "idVideo": "PSdvVGKuqFg"
         }
       },
       {
@@ -112,7 +113,8 @@
             "https://www.is.by/upload/iblock/4f2/timthumb.jpg",
             "https://photos.wikimapia.org/p/00/06/76/24/60_big.jpg",
             "https://family.by/uploads/posts/1364225161_fasad1.jpg"
-          ]
+          ],
+          "idVideo": "PKSii0OVqlI"
         }
       },
       {
@@ -166,7 +168,8 @@
             "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/%D0%92%D1%83%D0%BB._%D0%9A._%D0%9C%D0%B0%D1%80%D0%BA%D1%81%D0%B0%2C_31.JPG/1200px-%D0%92%D1%83%D0%BB._%D0%9A._%D0%9C%D0%B0%D1%80%D0%BA%D1%81%D0%B0%2C_31.JPG",
             "http://content.onliner.by/news/2014/02/default/b99bb4a9b402af35055e4914ba0c3db9.jpg",
             "https://cdn11.img.sputnik.by/images/103661/29/1036612974.jpg"
-          ]
+          ],
+          "idVideo": "Yg30CXQoO7A"
         }
       },
       {
@@ -224,7 +227,8 @@
             "https://cknov.by/template/img/slider-top/01.jpg",
             "https://upload.wikimedia.org/wikipedia/commons/e/e3/Srednyaya_shkola_N4_Minsk_BY.jpg",
             "https://kudago.com/media/images/place/06/ca/06cacf0ac897b2bc6589b7e7e0b0ba84.jpg"
-          ]
+          ],
+          "idVideo": "PydIoy9dnFM"
         }
       },
       {
@@ -287,7 +291,8 @@
             "https://belarusgid.by/wp-content/uploads/2016/11/hatyn.jpg",
             "https://upload.tury.club/data/e501b038ffe72fb715290bc6bd11bcf1/g4Q3gt7Y/taXyCUac.jpg",
             "http://www.fotobel.by/images/pamyatniki-belarusi/shunevka_2.jpg"
-          ]
+          ],
+          "idVideo": "P2-yBJvcJUo"
         }
       },
       {
@@ -361,7 +366,8 @@
             "https://upload.wikimedia.org/wikipedia/commons/8/84/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A7%D0%B0%D0%BF%D0%B0%D0%B5%D0%B2%D1%83.jpg",
             "https://img.tyt.by/n/minsk/0e/8/01_dka_card_620.jpg",
             "https://www.belcanto.ru/media/images/uploaded/belarusopera.jpg"
-          ]
+          ],
+          "idVideo": "dlQIlW3V-iU"
         }
       },
       {
@@ -414,7 +420,8 @@
             "https://places.by/wp-content/uploads/2017/08/DSC01290-1024x684.jpg",
             "https://img.tyt.by/n/06/7/zdaniya_mikhaila_parusnikova_v_minske_-_08.jpg",
             "https://naviny.by/sites/default/files/dinamo-daumana.jpg"
-          ]
+          ],
+          "idVideo": "jPgsBFp8dXk"
         }
       },
       {
@@ -469,7 +476,8 @@
             "http://content.onliner.by/news/realt/2012/03/405835331.jpg",
             "https://photos.wikimapia.org/p/00/02/20/96/60_big.jpg",
             "https://www.sb.by/upload/resize_cache/slam.image/iblock/17e/855_2000_1/17e348945315ca0cd88266e03988a0fa.jpg"
-          ]
+          ],
+          "idVideo": "72QgJFEneuk"
         }
       }
     ],
@@ -512,8 +520,8 @@
       "mainPerson": "Архитектор дня",
       "inputPlaceholder": "Введите имя архитектора или место его рождения",
       "notFound": "Ничего не найдено",
-      "video": "Видео",
-      "idVideo": "XQlJAiUZOrM"
+      "photoGallery": "Фотогалерея",
+      "video": "Видео"
     }
   }
 }

@@ -73,7 +73,7 @@ class App extends Component {
     }
 
     return (
-      <div>
+      <div className="d-flex flex-column h-100">
         <Header
           changeLanguageHandler={lang => changeLanguage(lang)}
           selectContentHandler={this.selectContentHandler}

@@ -72,6 +72,7 @@ class App extends Component {
     if (loading) {
       page = (
         <Loader
+          className="spinner"
           type="Circles"
           color="#00BFFF"
           height={100}

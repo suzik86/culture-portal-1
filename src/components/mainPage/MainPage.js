@@ -12,9 +12,9 @@ import OurTeam from './componentParts/OurTeam';
 class MainPage extends Component {
   todayIndex() {
     const { listLength } = this.props;
-    const dateOfYear = Math.round((Date.now()
+    const dayOfYear = Math.ceil((Date.now()
       - Date.parse(new Date().getFullYear(), 0, 0)) / 86400000);
-    return dateOfYear > listLength ? dateOfYear % listLength : dateOfYear;
+    return dayOfYear > listLength ? dayOfYear % listLength : dayOfYear;
   }
 
   render() {

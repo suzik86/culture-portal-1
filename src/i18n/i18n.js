@@ -5,14 +5,15 @@ import en from './en.json';
 import ru from './ru.json';
 import by from './by.json';
 
-i18n
-  .use(initReactI18next)
-  .init({
-    fallbackLng: 'ru',
-    lng: 'ru',
-    debug: true,
-    resources: { en, ru, by },
-  });
+const i18nInit = () => {
+  i18n
+    .use(initReactI18next)
+    .init({
+      fallbackLng: 'ru',
+      lng: 'ru',
+      debug: true,
+      resources: { en, ru, by },
+    });
+};
 
-
-export default i18n;
+export default i18nInit;

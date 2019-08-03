@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import Loader from 'react-loader-spinner';
-import '../../node_modules/react-modal-video/css/modal-video.min.css';
+import i18nInit from '../i18n/i18n';
 
+
+import '../../node_modules/react-modal-video/css/modal-video.min.css';
 import '../styles/App.css';
 
 import Architector from './architector/Architector';
@@ -23,6 +25,13 @@ class App extends Component {
       contentType: 'main',
       loading: true,
     };
+  }
+
+  componentDidMount() {
+    i18nInit();
+    this.setState({
+      loading: false,
+    });
   }
 
   selectContentHandler(contentType) {

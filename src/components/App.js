@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
+import Loader from 'react-loader-spinner';
 import '../../node_modules/react-modal-video/css/modal-video.min.css';
 
 import '../styles/App.css';
@@ -20,6 +21,7 @@ class App extends Component {
     this.state = {
       targetArch: 0,
       contentType: 'main',
+      loading: true,
     };
   }
 
@@ -41,46 +43,62 @@ class App extends Component {
     const architects = t('architects', { returnObjects: true });
     const site = t('site', { returnObjects: true });
     const listLength = architects.length;
-    const { targetArch, contentType } = this.state;
+    const { targetArch, contentType, loading } = this.state;
 
     const changeLanguage = (lng) => {
       i18n.changeLanguage(lng);
     };
+    let page;
 
-    let content;
-    switch (contentType) {
-      case 'list': {
-        content = (
-          <ArchitectsList selectPersonHandler={this.selectPersonHandler} />
-        );
-        break;
-      }
-      case 'person': {
-        content = (
-          <Architector data={architects} targetArch={targetArch} site={site} />
-        );
-        break;
-      }
-      default: {
-        content = (
-          <MainPage
-            architects={architects}
-            listLength={listLength}
-            selectPersonHandler={this.selectPersonHandler}
-          />
-        );
-      }
-    }
-
-    return (
-      <div>
-        <Header
-          changeLanguageHandler={lang => changeLanguage(lang)}
-          selectContentHandler={this.selectContentHandler}
+    if (loading) {
+      page = (
+        <Loader
+          type="Circles"
+          color="#00BFFF"
+          height={100}
+          width={100}
         />
-        {content}
-        <Footer />
-      </div>
+      );
+    } else {
+      let content;
+      switch (contentType) {
+        case 'list': {
+          content = (
+            <ArchitectsList selectPersonHandler={this.selectPersonHandler} />
+          );
+          break;
+        }
+        case 'person': {
+          content = (
+            <Architector data={architects} targetArch={targetArch} site={site} />
+          );
+          break;
+        }
+        default: {
+          content = (
+            <MainPage
+              architects={architects}
+              listLength={listLength}
+              selectPersonHandler={this.selectPersonHandler}
+            />
+          );
+        }
+      }
+      page = (
+        <>
+          <Header
+            changeLanguageHandler={lang => changeLanguage(lang)}
+            selectContentHandler={this.selectContentHandler}
+          />
+          {content}
+          <Footer />
+        </>
+      );
+    }
+    return (
+      <>
+        {page}
+      </>
     );
   }
 }

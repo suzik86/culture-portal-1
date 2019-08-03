@@ -3,6 +3,7 @@ import Iframe from 'react-iframe';
 
 const GoogleMapCustom = ({ src, place }) => (
   <Iframe
+    className="map"
     src={src}
     width="100%"
     height="600"

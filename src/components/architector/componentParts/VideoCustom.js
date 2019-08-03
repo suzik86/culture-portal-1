@@ -20,7 +20,7 @@ class VideoCustom extends Component {
   render() {
     const { isOpen } = this.state;
     return (
-      <div>
+      <div className="video">
         <ModalVideo channel="youtube" isOpen={isOpen} videoId={this.idVideo} onClose={() => this.setState({ isOpen: false })} />
         <Button variant="primary" size="lg" block onClick={this.openModal}>{this.video}</Button>
       </div>

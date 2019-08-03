@@ -17,7 +17,7 @@ const architectShortArticle = ({ architect, index, selectPersonHandler }) => (
     </Col>
     <Col>
       <Row>
-        <a href="#architect" onClick={() => selectPersonHandler('person', index)}><h3>{architect.name}</h3></a>
+        <a href="#architect" onClick={() => selectPersonHandler('person', index)}><h4>{architect.name}</h4></a>
       </Row>
       <Row>
         <p>

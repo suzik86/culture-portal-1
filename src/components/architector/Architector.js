@@ -16,6 +16,10 @@ import VideoCustom from './componentParts/VideoCustom';
 import GoogleMapCustom from './componentParts/GoogleMapCustom';
 
 class Architector extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     const { t, targetArch } = this.props;
     const data = t('architects', { returnObjects: true })[targetArch];
@@ -28,7 +32,7 @@ class Architector extends Component {
       title: data.biography,
       description: data.descriptionShort,
     };
-    const { video, idVideo } = site;
+    const { video, photoGallery } = site;
 
     return (
       <main className="main">
@@ -42,8 +46,8 @@ class Architector extends Component {
               <Biography biography={biography} />
               <TimeLineCustom detailedBiography={data.detailedBiography} />
               <Work work={data.work} />
-              <CarouselCustom gallery={data.work.project} />
-              <VideoCustom idVideo={idVideo} video={video} />
+              <CarouselCustom photoGallery={photoGallery} gallery={data.work.project} />
+              <VideoCustom idVideo={data.work.idVideo} video={video} />
               <GoogleMapCustom src={data.coordsSrc} place={data.place} />
             </Col>
           </Row>

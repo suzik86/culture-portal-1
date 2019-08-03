@@ -2,7 +2,7 @@ import React from 'react';
 
 const Biography = ({ biography }) => (
   <div>
-    <h3>{biography.title}</h3>
+    <h4>{biography.title}</h4>
     <p>{biography.description}</p>
   </div>
 );

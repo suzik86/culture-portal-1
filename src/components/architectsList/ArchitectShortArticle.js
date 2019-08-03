@@ -11,11 +11,11 @@ const cutArticle = (article, maxLength) => {
 };
 
 const architectShortArticle = ({ architect, index, selectPersonHandler }) => (
-  <Row>
-    <Col>
+  <Row className="architect-block">
+    <Col xs={12} md="auto" className="col-md text-center">
       <a href="#architect" onClick={() => selectPersonHandler('person', index)}><Image src={architect.photo} alt={architect.name} width="200" rounded /></a>
     </Col>
-    <Col>
+    <Col xs={12} md={9}>
       <Row>
         <a href="#architect" onClick={() => selectPersonHandler('person', index)}><h4>{architect.name}</h4></a>
       </Row>

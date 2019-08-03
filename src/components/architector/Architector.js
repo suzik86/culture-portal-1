@@ -41,7 +41,7 @@ class Architector extends Component {
             <Col className="col-md text-center">
               <Photo url={data.photo} />
               <Name name={data.name} />
-              <YearsLife life={data.life} />
+              <YearsLife years={data.years} life={data.life} />
               <Location location={location} />
               <Biography biography={biography} />
               <TimeLineCustom detailedBiography={data.detailedBiography} />

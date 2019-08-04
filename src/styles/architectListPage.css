@@ -1,14 +1,27 @@
-.main {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
 .not-found-text {
-  margin: 30px 0 30px 50px;
+  text-align: center;
+  margin: 30px auto;
+  color: red;
+  font-size: 1.3em;
 }
 
 .main .architect-block {
-  margin: 40px 0 40px 0;
+  margin: 40px 0;
 }
+
+.main .architect-block a{
+  color:  #82b1ff;
+}
+
+.main .architect-photo {
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+}
+
+/* .main .architect-name {
+  margin: 0 auto;
+  margin-bottom: 20px;
+} */
+
 

@@ -16,7 +16,7 @@ class Developer extends Component {
       <Col>
         <Image className="developer-photo" src={photo} alt={name} width="150" rounded />
         <p className="developer-name">{name}</p>
-        <a href={githubAccount}>
+        <a href={githubAccount} target="blank">
           <p>{github}</p>
         </a>
         <p>{contribution}</p>

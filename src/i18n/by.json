@@ -486,26 +486,31 @@
       "developer": [
       {
         "name": "Аляксандр Самусевіч",
+        "github": "19alexandr90",
         "contribution": "Стварыў json-файл з інфармацыяй аб архітэктара і камандзе распрацоўшчыкаў, функцыю пераключэння моў ...",
         "photo": "https://avatars0.githubusercontent.com/u/36624664?s=460&v=4"
       },
       {
         "name": "Ягор Глушанко",
+        "github": "GYegor",
         "contribution": "Стварыў старонку са спісам аўтараў і віджэт пошуку ...",
         "photo": "https://avatars1.githubusercontent.com/u/47121505?s=460&v=4"
       },
       {
         "name": "Ірына Шышкова",
+        "github": "suzik86",
         "contribution": "Создала шаблоны старонак і распрацавала дызайн сайта, галоўную старонку ...",
         "photo": "https://avatars3.githubusercontent.com/u/47080509?s=460&v=4"
       },
       {
         "name": "Аляксандр Павлюковец",
+        "github": "mbulldozer",
         "contribution": "Стварыў навігацыю, аб'ядналі усе кавалачкі кода ў адзін праект ...",
         "photo": "https://avatars3.githubusercontent.com/u/43214837?s=460&v=4"
       },
       {
         "name": "Аляксандр Ляхавец",
+        "github": "enerjaizzzer",
         "contribution": "Стварыў кампанент для адмалёўкі інфармацыі па аўтарам ...",
         "photo": "https://avatars3.githubusercontent.com/u/47753284?s=400&u=316b7133f25c8587dd27a42b6da96b843be7acd8&v=4"
       }]

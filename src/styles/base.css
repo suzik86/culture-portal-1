@@ -77,3 +77,11 @@ html {
   left: 50%;
   margin: -50px 0 0 -50px;
 }
+
+.nav-item {
+  display: inline-block;
+}
+
+.collapse .menu ~ .flag {
+  margin-left: 100px;
+}

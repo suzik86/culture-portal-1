@@ -22,7 +22,7 @@ class OurTeam extends Component {
               github={item.github}
               photo={item.photo}
               contribution={item.contribution}
-          />
+            />
           ))}
         </Row>
       </section>

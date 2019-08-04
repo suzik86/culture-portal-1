@@ -13,8 +13,13 @@
 .main .architect-description .bold {
   font-weight: 600;
 }
+
 .main .architect-description {
   text-align: center;
+}
+
+.main .architect-biography {
+  text-align: left;
 }
 
 .main .architect-description .bold {
@@ -35,6 +40,12 @@
   margin:  50px 0;
 }
 
+.main .architect-description .img-carousel {
+  object-fit: cover;
+  height: 600px;
+  max-height: 65vw;
+}
+
 .main .architect-description .video-button {
   width:  60%;
   background-color: #82b1ff;
@@ -45,7 +56,6 @@
 .main .architect-description .video-button:active {
   background-color: #82b1ff;
 }
-
 
 .main .architect-description .map {
   margin-bottom: 50px;

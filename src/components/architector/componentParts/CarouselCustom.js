@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import uniqid from 'uniqid';
 
-const CarouselCustom = ({ gallery }) => {
+const CarouselCustom = ({ photoGallery, gallery }) => {
   const imagesForCarousel = gallery.map(item => (
     <Carousel.Item key={uniqid()}>
       <img
@@ -14,9 +14,12 @@ const CarouselCustom = ({ gallery }) => {
   ));
 
   return (
-    <Carousel fade>
-      {imagesForCarousel}
-    </Carousel>
+    <>
+      <h4>{photoGallery}</h4>
+      <Carousel fade>
+        {imagesForCarousel}
+      </Carousel>
+    </>
   );
 };
 

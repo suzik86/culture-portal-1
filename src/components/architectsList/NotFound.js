@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 
 const NotFound = ({ notFound }) => (
   <Row>
-    <span>{notFound}</span>
+    <span className="not-found-text">{notFound}</span>
   </Row>
 );
 

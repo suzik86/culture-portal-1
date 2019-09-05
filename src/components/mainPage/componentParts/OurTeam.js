@@ -19,6 +19,7 @@ class OurTeam extends Component {
             <Developer
               key={uniqid()}
               name={item.name}
+              github={item.github}
               photo={item.photo}
               contribution={item.contribution}
             />

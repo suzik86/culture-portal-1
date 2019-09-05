@@ -21,7 +21,15 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|svg|png)$/,
-        use: ['file-loader'],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash].[ext]',
+              outputPath: 'assets/',
+            },
+          },
+        ],
       },
     ],
   },

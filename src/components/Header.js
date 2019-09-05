@@ -10,7 +10,7 @@ class Header extends Component {
     super(props);
     this.state = {
       flag: 'russia flag',
-      language: 'Russian',
+      language: 'Русский',
     };
     this.changeLanguage = this.changeLanguage.bind(this);
   }
@@ -42,17 +42,17 @@ class Header extends Component {
           </Nav>
           <i className={flag} />
           <NavDropdown title={language} id="basic-nav-dropdown">
-            <NavDropdown.Item href="#rus" onClick={() => this.changeLanguage('russia', 'Russian', 'ru')}>
+            <NavDropdown.Item href="#rus" onClick={() => this.changeLanguage('russia', 'Русский ', 'ru')}>
               <i className="russia flag" />
-              Russian
+              Русский
             </NavDropdown.Item>
-            <NavDropdown.Item href="#us" onClick={() => this.changeLanguage('united states', 'English', 'en')}>
-              <i className="united states flag" />
+            <NavDropdown.Item href="#us" onClick={() => this.changeLanguage('united kingdom', 'English ', 'en')}>
+              <i className="united kingdom flag" />
               English
             </NavDropdown.Item>
-            <NavDropdown.Item href="#by" onClick={() => this.changeLanguage('belarus', 'Belarusian', 'by')}>
+            <NavDropdown.Item href="#by" onClick={() => this.changeLanguage('belarus', 'Беларуская ', 'by')}>
               <i className="belarus flag" />
-              Belarusian
+              Беларуская
             </NavDropdown.Item>
           </NavDropdown>
         </Navbar.Collapse>
